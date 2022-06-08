@@ -40,15 +40,12 @@ main {
 }
 h2 {
     position: absolute;
-    color: #001d3d;
+    color: #540b0e;
     margin-left: 10px;
     text-shadow: 5px 5px 5px #3d5a80;
     letter-spacing: 2px;
 }
 
-hr {
-    color: #d00000;
-}
 
 ul {
     text-align: start;
@@ -56,7 +53,7 @@ ul {
     font-size: 1.3em;
     justify-self: start;
     align-self: center;
-    color: #d00000;
+    color: #540b0e;
     text-shadow: 5px 5px 5px #3d5a80;
 }
 
@@ -67,7 +64,7 @@ ul a {
 }
 
 ul a:hover {
-    color: #034078;
+    color: #2d00f7;
     text-decoration: underline;
 }
 
@@ -99,7 +96,7 @@ footer a {
 }
 
 footer a:hover {
-    color: azure;
+    color: #ffea00;
     text-decoration: underline;
 }
 
@@ -108,9 +105,9 @@ footer a:active {
 }
 
 footer a:visited {
-    color: #1e96fc;
+    color: #ffccd5;
 }
 
 .update {
-    color: #8ac926;
+    color: #ccff33;
 }

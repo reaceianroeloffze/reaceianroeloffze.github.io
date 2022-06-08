@@ -1,18 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Charm&family=Mr+Dafoe&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Just+Another+Hand&family=Shrikhand&display=swap');
 
 #content {
-    margin: auto;
-    height: 50%;
+    margin: 250px auto;
+    height: 40%;
+    text-align: center;
+    width: 40%;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 2px #001f54;
+    border-radius: 50px;
+}
+
+header, footer {
+    background-color: #001d3d;
+    color: #a9d6e5;
+    padding: 5px 0 5px 0;
+}
+
+header {
+    border-radius: 50px 50px 0 0;
 }
 
 h1 {
-    font-family: 'Mr Dafoe', cursive;
+    font-family: 'Just Another Hand', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 4em;
 }
 
 main {
+    border-left: 2px solid #001d3d;
+    border-right: 2px solid #001d3d;
     font-family: 'Shrikhand', cursive;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    background-color: #edf2fb;
+    box-sizing: border-box;
 }
+h2 {
+    position: absolute;
+    color: #001d3d;
+    margin-left: 10px;
+    text-shadow: 5px 5px 5px #3d5a80;
+    letter-spacing: 2px;
+}
+
+hr {
+    color: #d00000;
+}
+
+ul {
+    text-align: start;
+    grid-column: 1/2;
+    font-size: 1.3em;
+    justify-self: start;
+    align-self: center;
+    color: #d00000;
+    text-shadow: 5px 5px 5px #3d5a80;
+}
+
+
+ul a {
+    text-decoration: none;
+    color: #001d3d;
+}
+
+ul a:hover {
+    color: #034078;
+    text-decoration: underline;
+}
+
+ul a:visited {
+    color: #072ac8;
+}
+
+img {
+    grid-column: 2/3;
+    width: 70%;
+    justify-self: end;
+    align-self: center;
+    margin-top: 0;
+    box-shadow: -5px 0 15px 0 #3d5a80;
+}
+
 
 footer {
     font-family: 'Charm', cursive;
+    font-weight: 700;
+    border-radius: 0 0 50px 50px;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+
+footer a {
+    color: #a9d6e5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: azure;
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: aqua;
+}
+
+footer a:visited {
+    color: #1e96fc;
+}
+
+.update {
+    color: #8ac926;
 }

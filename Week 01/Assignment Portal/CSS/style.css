@@ -35,7 +35,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     width: 100%;
-    background-color: #2d00f7;
+    background-color: #edf2fb;
     box-sizing: border-box;
 }
 h2 {
@@ -46,9 +46,6 @@ h2 {
     letter-spacing: 2px;
 }
 
-hr {
-    color: #540b0e;
-}
 
 ul {
     text-align: start;
@@ -67,7 +64,7 @@ ul a {
 }
 
 ul a:hover {
-    color: #f20089;
+    color: #2d00f7;
     text-decoration: underline;
 }
 

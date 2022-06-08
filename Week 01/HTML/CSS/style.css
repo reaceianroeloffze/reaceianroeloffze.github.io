@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Mr+Dafoe&family=Shrikhand&display=swap');
+
+#content {
+    margin: auto;
+    height: 50%;
+}
+
+h1 {
+    font-family: 'Mr Dafoe', cursive;
+}
+
+main {
+    font-family: 'Shrikhand', cursive;
+}
+
+footer {
+    font-family: 'Charm', cursive;
+}

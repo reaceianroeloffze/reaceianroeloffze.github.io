@@ -12,6 +12,15 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    grid-gap: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
 }
 
 .first-grid {

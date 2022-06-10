@@ -2,9 +2,7 @@
 
 #content {
     margin: 250px auto;
-    height: 40%;
     text-align: center;
-    width: 40%;
     box-sizing: border-box;
     box-shadow: 10px 10px 10px 2px #001f54;
     border-radius: 50px;
@@ -25,35 +23,28 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     letter-spacing: 3px;
-    font-size: 4em;
 }
 
 main {
     border-left: 2px solid #001d3d;
     border-right: 2px solid #001d3d;
     font-family: 'Shrikhand', cursive;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     width: 100%;
     background-color: #edf2fb;
     box-sizing: border-box;
 }
 h2 {
-    position: absolute;
     color: #540b0e;
-    margin-left: 10px;
     text-shadow: 5px 5px 5px #3d5a80;
     letter-spacing: 2px;
+    padding: 0 10px 0 10px;
 }
 
 ul {
     text-align: start;
-    grid-column: 1/2;
-    font-size: 1.3em;
-    justify-self: start;
-    align-self: center;
     color: #540b0e;
     text-shadow: 5px 5px 5px #3d5a80;
+    padding-right: 10px;
 }
 
 
@@ -73,7 +64,7 @@ ul a:visited {
 
 img {
     grid-column: 2/3;
-    width: 70%;
+    width: 50%;
     justify-self: end;
     align-self: center;
     margin-top: 0;
@@ -85,8 +76,9 @@ footer {
     font-family: 'Charm', cursive;
     font-weight: 700;
     border-radius: 0 0 50px 50px;
-    line-height: 10px;
     letter-spacing: 2px;
+    padding: 10px 10px 0 10px;
+    padding-bottom: 10px;
 }
 
 footer a {

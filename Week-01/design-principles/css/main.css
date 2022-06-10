@@ -1,0 +1,27 @@
+#content {
+    margin: 0 auto;
+    width: 90%;
+}
+
+header, footer {
+    text-align: center;
+    background-color: ;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.first-grid {
+    grid-column: 1/2;
+}
+
+.second-grid {
+    grid-column: 2/3;
+}
+
+.third-grid {
+    grid-column: 3/4;
+}

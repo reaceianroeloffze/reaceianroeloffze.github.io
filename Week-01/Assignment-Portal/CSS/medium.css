@@ -2,6 +2,7 @@
     #content {
         height: 40%;
         width: 40%;
+        box-shadow: 10px 10px 10px 2px #001f54;
     }
 
     h1 {
@@ -36,6 +37,12 @@
 }
 
 @media only screen and (max-width: 32.5em) {
+
+    #content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     footer {
         line-height: 20px;
     }

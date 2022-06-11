@@ -8,13 +8,17 @@ body {
 }
 
 #content {
+    display: block;
+    font-size: 1rem;
+    padding: 10pt;
     margin: 0 auto;
-    width: 90%;
     text-align: center;
-    padding: 20px;
     font-family: 'Jost', sans-serif;
-    font-size: 1.4rem;
     color: #fdffb6;
+}
+
+header > h1, header > h2 {
+    font-size: 2rem;
 }
 
 #content a {
@@ -30,35 +34,12 @@ h1, h2 {
     letter-spacing: 1px;
 }
 
+main h2 {
+    padding-top: 10px;
+}
+
 hr {
     color: #14213d;
-}
-
-header, footer {
-    font-size: 1.8rem;
-}
-
-header, main {
-    margin-bottom: 50px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-gap: 20px;
-}
-
-.first-grid {
-    grid-column: 1/2;
-}
-
-.second-grid {
-    grid-column: 2 span 1
-}
-
-.third-grid {
-    grid-column: -1/-2;
 }
 
 section {
@@ -70,12 +51,11 @@ section {
 }
 
 section > span, section > a {
-    line-height: 60px;
-    font-size: 1.2em;
+    line-height: 30px;
 }
 
 .second-grid > span {
-line-height: 35px;
+line-height: 15px;
 }
 
 section > a {
@@ -95,6 +75,7 @@ section > img {
 
 section > p {
     text-align: start;
+    padding-bottom: 10px;
 }
 
 footer > p {

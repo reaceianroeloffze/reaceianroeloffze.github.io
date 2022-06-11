@@ -1,0 +1,31 @@
+/* Tablet view */
+
+@media screen and (min-width: 600px) {
+
+    p, span, a {
+        font-size: 1.2rem;
+    }
+
+    header > h1, header > h2 {
+        font-size: 3rem;
+    }
+
+    section > h2 {
+        font-size: 2rem;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 20px;
+    }
+
+    .second-grid > span {
+        line-height: 30px;
+        }
+
+    .third-grid {
+        grid-column: span 2;
+    }
+}

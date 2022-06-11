@@ -1,0 +1,50 @@
+/* Desktop/Laptop Screen Display */
+@media screen and (min-width: 1300px) {
+    
+    #content {
+        padding: 20px;
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    header > h1, header > h2 {
+        font-size: 4rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-gap: 20px;
+    }
+
+    /* gridded sections */
+.first-grid {
+    grid-column: 1/2;
+}
+
+.second-grid {
+    grid-column: 2 span 1
+}
+
+.third-grid {
+    grid-column: -1/-2;
+}
+
+    header, footer {
+        font-size: 1.8rem;
+    }
+
+    header, main {
+        margin-bottom: 50px;
+    }
+
+    section > span, section > a {
+        line-height: 60px;
+        font-size: 1.2em;
+    }
+
+    .second-grid > span {
+        line-height: 35px;
+        }
+}

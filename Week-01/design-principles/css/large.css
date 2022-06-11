@@ -19,20 +19,16 @@
     }
 
     /* gridded sections */
-.first-grid {
-    grid-column: 1/2;
-}
+    .first-grid {
+        grid-column: 1/2;
+    }
 
-.second-grid {
-    grid-column: 2/span 1
-}
+    .second-grid {
+        grid-column: 2/span 1
+    }
 
-.third-grid {
-    grid-column: -1/-2;
-}
-
-    header, footer {
-        font-size: 1.8rem;
+    .third-grid {
+        grid-column: -1/-2;
     }
 
     header, main {
@@ -47,4 +43,8 @@
     .second-grid > span {
         line-height: 35px;
         }
+
+    footer p, footer span, footer a {
+        font-size: 2rem;
+    }
 }

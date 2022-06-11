@@ -66,6 +66,14 @@ section > a:hover {
     color: #660708;
 }
 
+section a:active {
+    color: #5f0f40;
+}
+
+section a:visited {
+    color: #0d1b2a;
+}
+
 section > img {
     width: 100%;
     border-radius: 10px;
@@ -88,4 +96,12 @@ footer > p > a {
 
 footer a:hover {
     color: #ffb3c1;
+}
+
+footer a:active {
+    color: #d9ed92;
+}
+
+footer a:visited {
+    color: #d3d3d3
 }

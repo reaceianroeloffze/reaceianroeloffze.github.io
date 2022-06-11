@@ -1,16 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@600&display=swap');
 * {
     box-sizing: border-box;
 }
 
+body {
+    background-color: #14213d;
+}
+
 #content {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     text-align: center;
     padding: 20px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+    color: #fdffb6;
+}
+
+#content a {
+    text-decoration: none;
+}
+
+#content a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+hr {
+    color: #14213d;
+}
+
+header, footer {
+    font-size: 1.8rem;
 }
 
 header, main {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 main {
@@ -36,19 +65,46 @@ section {
     padding: 0 20px 0 20px;
     box-shadow: 5px 5px 10px ;
     border-radius: 10px;
+    background-color: #fdffb6;
+    color: #14213d;
 }
 
 section > span, section > a {
-    line-height: 40px;
+    line-height: 60px;
     font-size: 1.2em;
+}
+
+.second-grid > span {
+line-height: 35px;
+}
+
+section > a {
+    color: #14213d;
+}
+
+section > a:hover {
+    color: #660708;
 }
 
 section > img {
     width: 100%;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
+    border: 5px solid #14213d;
 }
 
 section > p {
     text-align: start;
+}
+
+footer > p {
+    line-height: 20px;
+}
+
+footer > p > a {
+    color: #89fc00;
+}
+
+footer a:hover {
+    color: #ffb3c1;
 }

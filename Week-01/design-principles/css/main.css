@@ -63,7 +63,7 @@ main {
 
 section {
     padding: 0 20px 0 20px;
-    box-shadow: 5px 5px 10px ;
+    box-shadow: 0 0 15px #e3f2fd;
     border-radius: 10px;
     background-color: #fdffb6;
     color: #14213d;

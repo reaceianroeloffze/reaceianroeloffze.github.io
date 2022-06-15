@@ -1,27 +1,61 @@
 /* CSS layout for smartphone viewports and
 General CSS Declarations across all viewports. */
 
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&family=Rubik:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+body {
+    background-color: #abc4ff;
+}
+
 #content {
     margin: 0 auto;
     width: 90%;
     padding: 10px;
+    font-weight: 600
 }
 
-header, .logo, .site-purpose > h2, footer, .site-info {
+h1, h2 {
+    font-family: 'Rubik', sans-serif;
+}
+
+header, .logo, h1, h2, footer, .site-info, h3 {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
+nav, footer {
+    background-color: #47126b;
+    border-radius: 10px;
 }
 
-nav {
-    background-color: #e0b1cb;
+nav a, footer, footer a {
+    color: aliceblue;
 }
 
-nav ul li {
+nav a:hover {
+    background-color: aliceblue;
+    color: #47126b;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
     display: block;
-    padding: 10px 0 10px 0;
+    text-align: center;
+    padding: .75rem;
+}
+
+.logo {
+    margin-bottom: 50px;
 }
 
 .logo img {
@@ -30,4 +64,59 @@ nav ul li {
 
 a {
     text-decoration: none;
+}
+
+/* table {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+td, th {
+    padding: 10px;
+    border: 2px solid gray;
+} */
+
+footer {
+    padding: 10px 0 10px;
+}
+
+table, .colors {
+    width: 100%;
+    min-width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td{
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #7FDEFF;
+}
+
+.secondary {
+background-color: #550C18;
+}
+
+.accent1 {
+background-color: #25291C;
+}
+
+.accent2{
+background-color: #ECA72C;
+}
+
+/* .accent3{
+background-color: #4D1804;
+} */
+
+.secondary, .accent1, .accent3 {
+    color: white;
 }

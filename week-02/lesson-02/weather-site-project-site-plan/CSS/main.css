@@ -3,19 +3,29 @@ General CSS Declarations across all viewports. */
 
 #content {
     margin: 0 auto;
-    width: 960px;
+    width: 90%;
     padding: 10px;
 }
 
-header {
+header, .logo, .site-purpose > h2, footer, .site-info {
     text-align: center;
 }
 
-
-
-ul {
+nav ul {
     list-style: none;
-    
+}
+
+nav {
+    background-color: #e0b1cb;
+}
+
+nav ul li {
+    display: block;
+    padding: 10px 0 10px 0;
+}
+
+.logo img {
+    width: 100%;
 }
 
 a {

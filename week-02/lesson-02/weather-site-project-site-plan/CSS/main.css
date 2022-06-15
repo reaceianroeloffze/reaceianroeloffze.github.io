@@ -1,0 +1,23 @@
+/* CSS layout for smartphone viewports and
+General CSS Declarations across all viewports. */
+
+#content {
+    margin: 0 auto;
+    width: 960px;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,15 @@
+/* CSS layout for desktop and laptop screens */
+
+@media screen and (min-width: 600px) {
+    
+    .site-plan-links ul {
+        display: flex;
+    }
+
+    ul > li {
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 auto;
+    }
+
+}

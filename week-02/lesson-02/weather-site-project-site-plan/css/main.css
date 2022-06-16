@@ -114,7 +114,7 @@ table, .colors {
 }
 
 .primary {
-    background-color: #7FDEFF;
+    background-color: #D6F5FF;
 }
 
 .secondary {
@@ -126,7 +126,7 @@ background-color: #25291C;
 }
 
 .accent2{
-background-color: #ECA72C;
+background-color: #faff81;
 }
 
 /* .accent3{
@@ -149,7 +149,7 @@ background-color: #4D1804;
 
 .sample-paragraph {
     background-color: #25291C;
-    color: #ECA72C;
+    color: #faff81;
     padding: 5px;
     font-weight: normal;
     border-radius: 5px;

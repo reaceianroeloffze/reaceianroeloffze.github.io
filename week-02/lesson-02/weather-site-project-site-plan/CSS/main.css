@@ -51,7 +51,7 @@ nav ul{
     overflow: hidden;
 }
 
-nav li a {
+nav > ul > li > a {
     display: block;
     text-align: center;
     padding: .75rem;
@@ -127,4 +127,16 @@ background-color: #4D1804;
 .heading-font {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
+}
+
+.paragraph-font, .sample-paragraph {
+    font-family: Russo One, sans-serif;
+    letter-spacing: 1px;
+}
+
+.sample-paragraph {
+    background-color: #25291C;
+    color: #ECA72C;
+    padding: 5px;
+    font-weight: normal;
 }

@@ -12,6 +12,10 @@
         flex: 1 1 auto;
     }
 
+    nav a:hover {
+        border-radius: 10px;
+    }
+
     .logo > img {
         width: unset;
     }

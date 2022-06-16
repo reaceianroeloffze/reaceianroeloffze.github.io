@@ -41,7 +41,10 @@ nav a, footer, footer a {
 nav a:hover {
     background-color: aliceblue;
     color: #47126b;
-    border-radius: 10px;
+}
+
+nav a:active {
+    background-color:thistle;
 }
 
 nav ul{
@@ -58,7 +61,7 @@ nav > ul > li > a {
 }
 
 .logo {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .logo img {
@@ -82,7 +85,17 @@ td, th {
 
 footer {
     padding: 10px 0 10px;
+    color: darkkhaki;
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: cornflowerblue;
+}
+
 
 table, .colors {
     width: 100%;
@@ -139,4 +152,5 @@ background-color: #4D1804;
     color: #ECA72C;
     padding: 5px;
     font-weight: normal;
+    border-radius: 5px;
 }

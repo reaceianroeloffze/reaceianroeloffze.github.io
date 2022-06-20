@@ -15,5 +15,5 @@ const options2 = {
     hourCycle: 'h24'
 }
 
-let update = document.querySelector('.date').innerText = new Date().toLocaleDateString('en-US', options2);
+let update = document.querySelector('.date').innerText = new Date(document.lastModified).toLocaleDateString('en-US', options2);
 console.log(update)

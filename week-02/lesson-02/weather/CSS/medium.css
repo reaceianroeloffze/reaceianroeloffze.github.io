@@ -1,0 +1,44 @@
+@media screen and (min-width: 600px) {
+    
+    nav li{
+        justify-self: center;
+        align-self: center;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    ul {
+        display: flex;
+        text-align: center;
+    }
+
+    li {
+        flex: 1 1 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+        border-radius: 60px;
+    }
+
+    .site-title {
+        font-size: 3rem;
+    }
+    .motto {
+        font-size: 1rem;
+    }
+    
+    main {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+}

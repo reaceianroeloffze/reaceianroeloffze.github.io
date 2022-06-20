@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Russo+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    margin: 0 auto;
+    width: 100%;
+    font-family: Russo One, sans-serif;
+    background-color: #D6F5FF;
+}
+
+h1, h2 {
+    font-family: Bangers, cursive;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    background-color: #faff81;
+    color: #550C18;
+}
+
+
+.logo-box {
+    margin-right: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.site-title-and-motto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.site-title {
+    padding: 0;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+nav, footer {
+    background-color: #25291C;
+}
+
+nav a, footer a {
+    color: #D6F5FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li > a {
+    padding: 20px;
+    display: block;
+}
+
+nav > ul > li > a:hover {
+    background-color: #D6F5FF;
+    color: #550C18;
+}
+
+main {
+    margin: 0 auto;
+}
+
+main > div {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #25291C;
+    background-color: #faff81;
+    color: #25291C;
+}
+
+.page-title {
+    text-align: center;
+    color: #550C18;
+}
+
+footer {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    margin: 0 auto;
+    color: #faff81;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 280px) {
+    
+    #content {
+        font-size: 0.8rem;
+    }
+
+}

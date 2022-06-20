@@ -1,0 +1,19 @@
+@media screen and (min-width: 1200px) {
+    
+    main {
+        width: 80%;
+    }
+
+    .site-title {
+        font-size: 4rem;
+    }
+    .motto, .page-title {
+        font-size: 2rem;
+    }
+
+    nav a, footer {
+        font-size: unset;
+    }
+
+
+}

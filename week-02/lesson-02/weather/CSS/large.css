@@ -11,7 +11,7 @@
         font-size: 2rem;
     }
 
-    nav a, footer {
+    nav > ul > li, footer {
         font-size: unset;
     }
 

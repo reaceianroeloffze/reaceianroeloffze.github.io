@@ -26,7 +26,6 @@ header {
     color: #550C18;
 }
 
-
 .logo-box {
     margin-right: 15px;
 }
@@ -50,6 +49,30 @@ header {
     margin-top: 0;
 }
 
+nav > #menu-button {
+    background: transparent;
+    border: none;
+    color: #D6F5FF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+nav > #menu-button > span:nth-child(1) {
+    display: block;
+}
+nav > #menu-button > span:nth-child(2) {
+    display: none;
+}
+
+nav > #menu-button.open > span:nth-child(1) {
+    display: none;
+}
+
+nav > #menu-button.open > span:nth-child(2) {
+    display: block;
+}
+
 nav, footer {
     background-color: #25291C;
 }
@@ -62,10 +85,15 @@ a {
     text-decoration: none;
 }
 
-ul {
+nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: none;
+}
+
+nav > ul.open {
+    display: block;
 }
 
 nav > ul > li > a {
@@ -74,9 +102,20 @@ nav > ul > li > a {
     transition: all .2s ease-in-out;
 }
 
+nav > ul > li.preston-page > a {
+    background-color: #faff81;
+    color: #550C18;
+}
+
 nav > ul > li > a:hover {
     background-color: #D6F5FF;
     color: #550C18;
+}
+
+nav > ul > li > a:active {
+    background-color: #550C18;
+    color: #faff81;
+    transition: none;
 }
 
 main {

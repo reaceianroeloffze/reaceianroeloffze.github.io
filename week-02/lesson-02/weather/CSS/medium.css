@@ -1,23 +1,21 @@
-@media screen and (min-width: 55.5rem) {
-    
-    nav li{
-        justify-self: center;
-        align-self: center;
+@media screen and (min-width: 600px) {
+
+    nav > button {
+        display: none;
     }
 
-    /* nav a {
-        font-size: 0.8rem;
-    } */
-
-    ul {
+    nav > ul#main-nav {
         display: flex;
         text-align: center;
     }
 
-    li {
+    nav > ul > li {
+        justify-self: center;
+        align-self: center;
         flex: 1 1 100%;
         padding: 0;
         margin: 0;
+        font-size: 0.8rem;
     }
 
     .logo {
@@ -35,10 +33,6 @@
     
     main {
         width: 90%;
-    }
-
-    footer {
-        font-size: 0.8rem;
     }
 
 }

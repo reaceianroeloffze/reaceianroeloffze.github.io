@@ -8,10 +8,41 @@ nav {
     background-color: teal;
 }
 
+nav > button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: aqua;
+}
+
 nav > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: none;
+}
+
+nav > ul.open {
+    display: block;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: aquamarine;
+    border-top: 1px solid aliceblue
+}
+
+nav > ul > li.products > a {
+    background-color: turquoise;
+    color: indigo;
+}
+
+nav > ul > li > a:hover {
+    background-color: aquamarine;
+    color: teal;
 }
 
 

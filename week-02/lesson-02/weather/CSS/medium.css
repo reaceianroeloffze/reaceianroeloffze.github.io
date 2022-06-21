@@ -1,13 +1,13 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 55.5rem) {
     
     nav li{
         justify-self: center;
         align-self: center;
     }
 
-    nav a {
+    /* nav a {
         font-size: 0.8rem;
-    }
+    } */
 
     ul {
         display: flex;

@@ -17,7 +17,7 @@ header {
     border-radius: 50px 50px 0 0;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Just Another Hand', cursive;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -32,12 +32,13 @@ main {
     background-color: #edf2fb;
     box-sizing: border-box;
 }
-h2 {
+
+/* h2 {
     color: #540b0e;
     text-shadow: 5px 5px 5px #3d5a80;
     letter-spacing: 2px;
     padding: 0 10px 0 10px;
-}
+} */
 
 ul {
     text-align: start;

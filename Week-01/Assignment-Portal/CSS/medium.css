@@ -6,17 +6,16 @@
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
     }
 
     .grid-div {
         display: grid;
         grid-template-columns: 2fr 1fr;
-    }
-
-    h2 {
-        position: absolute;
-        margin-left: 10px;
     }
 
     img {

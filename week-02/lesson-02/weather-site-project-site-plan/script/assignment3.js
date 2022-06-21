@@ -1,4 +1,4 @@
-const date = new Date(Date.UTC(2022, 6, 8, 12, 55, 0))
+// const date = new Date(Date.UTC(2022, 6, 8, 12, 55, 0))
 const options1 = {
     year: 'numeric'
 }
@@ -15,5 +15,5 @@ const options2 = {
     hourCycle: 'h24'
 }
 
-let update = document.querySelector('.date').innerText = new Date().toLocaleDateString('en-US', options2);
+let update = document.querySelector('.date').innerText = new Date(document.lastModified).toLocaleDateString('en-US', options2);
 console.log(update)

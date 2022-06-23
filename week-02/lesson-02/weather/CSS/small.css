@@ -11,7 +11,18 @@
     background-color: #D6F5FF;
 }
 
-h1, h2 {
+#content > div.banner {
+    text-align: center;
+    align-self: center;
+    background-color: #D6F5FF;
+    color: #4D1804;
+    padding: 1px 0 1px 0;
+    border-bottom: 2px solid #550C18;
+    display: none;
+}
+
+
+h1, h2, h3 {
     font-family: Bangers, cursive;
     letter-spacing: 1px;
     padding: 0;
@@ -47,6 +58,12 @@ header {
     padding: 0;
     margin-bottom: 3px;
     margin-top: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav > #menu-button {
@@ -122,17 +139,53 @@ main {
     margin: 0 auto;
 }
 
-main > div {
-    padding: 5px;
+main > article {
+    padding: 10px;
     margin-bottom: 5px;
     border: 2px solid #4D1804;
     background-color: #faff81;
-    color: #4D1804;
+    color: #4D1804;    
 }
 
 .page-title {
     text-align: center;
     color: #550C18;
+}
+
+main > div.hero-box {
+    padding: 0;
+    border: none;
+}
+
+main > div.hero-box > img {
+    width: 100%;
+    text-align: center;
+    border: 2px solid #550C18;
+}
+
+main section.weather-summary {
+    background-color: #25291C;
+    color: #faff81;
+    padding: 10px;
+    border: 2px solid #faff81;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.weather-summary > h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #faff81;
+    font-weight: normal;
+}
+
+article > .article-img {
+    width: 100%;
+}
+
+article h2 {
+    text-align: center;
 }
 
 footer {

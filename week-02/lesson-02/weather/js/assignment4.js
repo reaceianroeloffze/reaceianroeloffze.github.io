@@ -25,3 +25,18 @@ const menuToggle = () => {
 const menuBtn = document.querySelector('#menu-button');
 
 menuBtn.onclick = menuToggle;
+
+// Set a condition to display a banner above the header if the current day is Friday
+const currentDate = new Date();
+const currentDay = currentDate.getDay();
+let banner 
+
+if (currentDay === 4) {
+    banner = document.querySelector('.banner')
+    banner.display = 'block';
+    console.log(banner)
+}
+else {
+    banner.display = 'none';
+    console.log(banner)
+}

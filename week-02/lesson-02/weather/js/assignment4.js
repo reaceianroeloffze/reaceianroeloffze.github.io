@@ -19,7 +19,7 @@ console.log(update) // Display full format
 const menuToggle = () => {
     document.querySelector('#main-nav').classList.toggle('open');
     document.getElementById('menu-button').classList.toggle('open');
-}    
+}
 
 // Set the applicable CSS to be applied once the menu button is clicked.
 const menuBtn = document.querySelector('#menu-button');
@@ -29,14 +29,19 @@ menuBtn.onclick = menuToggle;
 // Set a condition to display a banner above the header if the current day is Friday
 const currentDate = new Date();
 const currentDay = currentDate.getDay();
-let banner 
+console.log(currentDay);
 
-if (currentDay === 4) {
-    banner = document.querySelector('.banner')
-    banner.display = 'block';
-    console.log(banner)
-}
-else {
-    banner.display = 'none';
-    console.log(banner)
+
+const displayBanner = () => {
+    let p = document.createElement('p');
+    p.textContent = 'Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion!';
+    p.classList.add('banner');
+    document.body.prepend(p);
+    // banner = document.querySelector('.banner');
+    // banner.classList.add('there');
+};
+
+if (currentDay === 5) {
+    displayBanner();
+    // console.log(banner);
 }

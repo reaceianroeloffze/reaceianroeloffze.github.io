@@ -11,15 +11,17 @@
     background-color: #D6F5FF;
 }
 
-#content > div.banner {
+.banner {
+    font-family: Russo One, sans-serif;
     text-align: center;
     align-self: center;
     background-color: #D6F5FF;
     color: #4D1804;
-    padding: 1px 0 1px 0;
+    padding: 20px 0 20px 0;
     border-bottom: 2px solid #550C18;
-    display: none;
-}
+    margin: 0;
+ }
+
 
 
 h1, h2, h3 {

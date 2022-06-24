@@ -37,11 +37,8 @@ const displayBanner = () => {
     p.textContent = 'Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion!';
     p.classList.add('banner');
     document.body.prepend(p);
-    // banner = document.querySelector('.banner');
-    // banner.classList.add('there');
 };
 
 if (currentDay === 5) {
     displayBanner();
-    // console.log(banner);
 }

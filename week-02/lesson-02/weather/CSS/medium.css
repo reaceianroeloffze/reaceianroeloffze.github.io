@@ -26,6 +26,12 @@
         font-size: .8rem;
     }
 
+    .title-logo {
+        margin: auto;
+        width: 40%;
+        text-align: center;
+    }
+
     .logo {
         width: 120px;
         height: auto;
@@ -34,9 +40,13 @@
 
     .site-title {
         font-size: 3rem;
+        text-align: left;
+        align-self: center;
     }
+    
     .motto {
         font-size: 1.4rem;
+        text-align: left;
     }
 
     h2 {

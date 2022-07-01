@@ -20,25 +20,27 @@
                 </p>
             </div> -->
             <header>
-                <div class="logo-box">
-                    <img class="logo" src="Images/natures-moods-logo.jpg" alt="Nature's Moods Logo">
+                <div class="title-logo">
+                    <div class="logo-box">
+                        <img class="logo" src="Images/natures-moods-logo.jpg" alt="Nature's Moods Logo">
+                    </div>
+                    <section class="site-title-and-motto">
+                        <h1 class="site-title">Nature's Moods</h1>
+                        <div class="motto">Where Nature Does The Talking</div> 
+                    </section>
                 </div>
-                <section class="site-title-and-motto">
-                    <h1 class="site-title">Nature's Moods</h1>
-                    <div class="motto">Where Nature Does The Talking</div> 
-                </section>
+                <nav class="navigation">
+                    <button id="menu-button"><span>&#8943;</span><span>&#8942;</span></button>
+                    <ul id="main-nav">
+                        <li><a href="#">Home</a></li>
+                        <li class="preston-page"><a href="preston.html">Preston</a></li>
+                        <li><a href="#">Soda Springs</a></li>
+                        <li><a href="#">Fish Haven</a></li>
+                        <li><a href="#">Storm Center</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </nav>
             </header>
-            <nav class="navigation">
-                <button id="menu-button"><span>&#8943;</span><span>&#8942;</span></button>
-                <ul id="main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li class="preston-page"><a href="preston.html">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
             <main>
                 <h2 class="page-title">Preston Idaho</h2>
                 <div class="hero-box">
@@ -47,10 +49,10 @@
                         <h3>Weather Summary</h3>
                         <div class="summary">
                             Condition: Sunny <br>
-                            Max Temp: 80°F <br>
-                            Wind CHill: None <br>
+                            Max Temp: <span id="temp"></span>°F <br>
+                            Wind CHill: <span id="wind-chill"></span> F <br>
                             Humidity: 77% <br>
-                            Wind Speed: 7 mph <br>
+                            Wind Speed: <span id="wind-speed"></span> mph <br>
                         </div>
                     </section>
                 </div>
@@ -114,5 +116,6 @@
         </div>
 
         <script src="js/assignment4.js"></script>
+        <script src="js/windchill.js"></script>
     </body>
 </html>

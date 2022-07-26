@@ -28,7 +28,7 @@
 
     .title-logo {
         margin: auto;
-        width: 40%;
+        width: 60%;
         text-align: center;
     }
 
@@ -167,6 +167,27 @@
 
     footer > p {
         font-size: 1.3rem;
+    }
+
+    @media screen and (min-width: 1280px) {
+        
+        .title-logo {
+            width: 50%;
+        }
+
+        .site-title {
+            font-size: 4rem;
+        }
+
+        .motto {
+            font-size: 1.5rem;
+        }
+
+        article .article-img {
+            width: 470px;
+        }
+    
+
     }
 
 }

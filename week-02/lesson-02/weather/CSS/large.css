@@ -15,6 +15,10 @@
         font-size: 2rem;
     }
 
+    .title-logo {
+        width: 38%; 
+    }
+
     .logo {
         /* width: 150px; */
         border-radius: 75px;

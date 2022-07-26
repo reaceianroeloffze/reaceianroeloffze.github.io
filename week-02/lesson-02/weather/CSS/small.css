@@ -178,7 +178,7 @@ main > div.hero-box {
     padding: 0;
 }
 
-main > div.hero-box > img {
+main > div.hero-box img {
     width: 100%;
     text-align: center;
     border: 3px solid #550C18;
@@ -235,7 +235,7 @@ div.days > div.saturday {
     border-radius: 0 0 10px 10px;
 }
 
-article > .article-img {
+article .article-img {
     border: 3px solid #550C18;
     width: 100%;
 }
@@ -309,13 +309,19 @@ article, .map-and-contact, img {
         display: block;
     }
 
+    .title-logo {
+        padding-right: 4px;
+    }
+
     .logo-box {
-        width: 100%;
-        margin-right: 0;
+        /* width: 100%; */
+        margin-right: 0px;
     }
 
     .logo {
-        margin: 0 85px 0 85px;
+        float: left;
+        /* width: 20%; */
+        /* margin: 0 85px 0 85px; */
     }
 
     .site-title-and-motto {
@@ -323,11 +329,11 @@ article, .map-and-contact, img {
     }
 
     .site-title {
-        font-size: 2.4rem;
+        font-size: 1.7rem;
     }
 
     .motto {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     div.days img {

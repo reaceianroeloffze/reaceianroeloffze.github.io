@@ -42,6 +42,7 @@ pendingImages.forEach((img) => {
 
 const images = document.querySelectorAll('[data-src]'); // Putting anything in square brackets locates attributes, even in CSS.
 
+// Create a Function to retrieve all data-src attributes in document and convert them to normal src attributes
 const preloadImage = (img) => {
     const imgSrc = img.getAttribute('data-src');
     if (!imgSrc) {
@@ -51,6 +52,7 @@ const preloadImage = (img) => {
     img.src = imgSrc;
 }
 
+// Create a function using Intersection Observer to loop through all loaded images and set them to lazy load
 const imageView = new IntersectionObserver((entries, imageView) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {

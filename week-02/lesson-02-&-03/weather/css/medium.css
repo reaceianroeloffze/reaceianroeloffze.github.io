@@ -169,6 +169,18 @@
         font-size: 1.3rem;
     }
 
+    /* Gallery Page Styling */
+
+    #gallery-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    figure {
+        margin: 20px 0 20px 0;
+    }
+
     @media screen and (min-width: 1280px) {
         
         .title-logo {

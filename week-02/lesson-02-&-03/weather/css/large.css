@@ -83,4 +83,11 @@
         line-height: 20px;
     }
 
+    /* Gallery Page Styling */
+
+    #gallery-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }

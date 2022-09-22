@@ -130,7 +130,7 @@ nav > ul > li > a {
     transition: all .2s ease-in-out;
 }
 
-nav > ul > li.preston-page > a {
+.navigation > ul > li.preston-page > a {
     background-color: #faff81;
     color: #550C18;
 }
@@ -285,6 +285,25 @@ article, .map-and-contact, img {
 .contact-info > h3 {
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+/* Gallery Site Styles */
+
+figure {
+    margin: 20px;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.gallery-navigation > ul > li.gallery-page >a {
+    background-color: #faff81;
+    color: #550C18;
 }
 
 @media screen and (max-width: 280px) {

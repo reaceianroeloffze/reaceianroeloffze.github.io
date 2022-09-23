@@ -1,5 +1,5 @@
 // Get all the data-src and data-srcset attributes present in document.
-const realImages = document.querySelectorAll('[data-src]', '[data-srcset]');
+const realImages = document.querySelectorAll('[data-src] [data-srcset]');
 
 // specify an image threshold before loading and from what position from the start of each side of the viewport to start loading the real images.
 const imgOptions = {
@@ -9,11 +9,13 @@ const imgOptions = {
 
 // Create a function to replace the data-src and data-srcset attributes and their contents to actual src and srcset attributes.
 const preloadImage = (img) => {
-    const imgSrc = img.getAttribute('data-src', 'data-srcset');
+    const imgSrc = img.getAttribute('data-src');
+    // const imgSrcset = img.getAttribute('data-srcset');
     if (!imgSrc) {
         return;
     } 
     img.src = imgSrc;
+    // img.srcset = imgSrcset
 };
 
 

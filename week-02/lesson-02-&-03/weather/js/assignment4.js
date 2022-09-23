@@ -31,12 +31,13 @@ const currentDate = new Date();
 const currentDay = currentDate.getDay();
 console.log(currentDay);
 
+const preston = document.querySelector('.preston-body')
 
 const displayBanner = () => {
     let p = document.createElement('p');
     p.textContent = 'Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion!';
     p.classList.add('banner');
-    document.body.prepend(p);
+    preston.prepend(p);
 };
 
 if (currentDay === 5) {

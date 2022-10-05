@@ -3,7 +3,7 @@ let pendingImages = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
     threshold: 1,
-    rootMargin: '0px 0px 300px 0px'
+    rootMargin: '0px 0px 200px 0px'
 };
 
 // Create a function to replace and remove the data-src attribute with an src attribute upon loading an image

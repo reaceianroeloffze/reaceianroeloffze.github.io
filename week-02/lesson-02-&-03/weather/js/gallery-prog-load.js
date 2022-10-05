@@ -7,13 +7,13 @@ const imgOptions = {
     rootMargin: '0px, 0px, -500px, 0px'
 };
 
-let imagesToLoad = document.querySelectorAll('[data-src], [data-srcset]');
+let imagesToLoad = document.querySelectorAll('[data-srcset]');
 
 const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
+    // image.setAttribute('src', image.getAttribute('data-src'));
     image.setAttribute('srcset', image.getAttribute('data-srcset'));
     image.onload = () => {
-        image.removeAttribute('data-src');
+        // image.removeAttribute('data-src');
         image.removeAttribute('data-srcset');
     };
 };

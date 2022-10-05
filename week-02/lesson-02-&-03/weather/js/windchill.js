@@ -1,16 +1,13 @@
-//
-let t = parseFloat(document.querySelector('#temp')).textContent = 50;
-let s = parseFloat(document.getElementById('wind-speed')).textContent = 7;
 
-console.log(t, s);
+function f() {
+  let t = parseFloat(document.querySelector('#temp').innerHTML);
+  let s = parseFloat(document.getElementById('wind-speed').innerHTML);
 
-let windChill;
+  if (t > 50 || s < 3) {
+    return 'N/A'
+  }
 
-function f (s, t) {
-    windChill = 35.74 + (0.6215*t) - 35.75*(Math.pow(s, 0.16)) + 0.4275*t*(Math.pow(s, 0.16));
-    // console.log(windChill);
+  return Math.round(35.74 + (0.6215*t) - 35.75*(Math.pow(s, 0.16)) + 0.4275*t*(Math.pow(s, 0.16)), 2);
 }
 
-console.log(windChill);
-
-document.querySelector('#wind-chill').textContent = f;
+document.querySelector('#wind-chill').textContent = f();

@@ -135,11 +135,6 @@ nav > ul > li > a {
     color: #550C18;
 }
 
-nav > ul > li > a:hover {
-    background-color: #D6F5FF;
-    color: #550C18;
-}
-
 nav > ul > li > a:active {
     background-color: #550C18;
     color: #faff81;
@@ -169,6 +164,10 @@ main > article {
     border: 3px solid #4D1804;
     background-color: #faff81;
     color: #4D1804;    
+}
+
+article > p > a:active {
+    color: #550C18;
 }
 
 .page-title {

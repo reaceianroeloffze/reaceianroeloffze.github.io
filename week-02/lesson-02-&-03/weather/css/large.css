@@ -24,8 +24,19 @@
         border-radius: 75px;
     }
 
+    
     nav > ul {
         margin: 0 10% 0 10%;
+    }
+    nav > ul > li > a:hover {
+        background-color: #D6F5FF;
+        color: #550C18;
+    }
+
+    nav > ul > li > a:active {
+        background-color: #550C18;
+        color: #faff81;
+        transition: none;
     }
 
     nav > ul > li, footer {
@@ -52,6 +63,18 @@
     .weather-summary > h3 {
         font-weight: 700;
         letter-spacing: 2px;
+    }
+
+    article > p > a {
+        color: #25291C;
+    }
+
+    article > p > a:hover {
+        text-decoration: underline;
+    }
+
+    article > p > a:active {
+        color: #550C18;
     }
 
     article .article-img {

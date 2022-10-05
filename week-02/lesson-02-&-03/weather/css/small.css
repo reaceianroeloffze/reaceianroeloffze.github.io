@@ -156,6 +156,8 @@ main > .page-title, .condition {
     border-radius: 50px;
     padding: 7px 0 7px 0;
     letter-spacing: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 article, .map-and-contact, .hero-box {
@@ -257,10 +259,6 @@ footer {
     color: #faff81;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
 footer > div.map-and-contact {
     color: #faff81;
 }
@@ -269,7 +267,7 @@ article, .map-and-contact, img {
     border-radius: 10px;
 }
 
-.map-and-contact > .map {
+.map-and-contact > picture > .map {
     width: 100%;
 }
 

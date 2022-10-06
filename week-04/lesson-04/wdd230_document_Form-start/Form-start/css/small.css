@@ -59,6 +59,65 @@ main {
     min-height: 20rem;
 }
 
+/* ---------- Form ----------- */
+
+form > fieldset {
+    margin: 2rem 0;
+    border: 3px solid #0077b6;
+    padding: .5rem 2%;
+    border-radius: 10px;
+}
+
+form > fieldset > legend {
+    color: #0077b6;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form > fieldset > label.top, form > fieldset > div {
+    display: block;
+    padding-top: 1rem;
+    color: #d00000;
+    font-size: .8rem;
+}
+
+form > fieldset > label.top > input, form > fieldset > label.top > select {
+    /* -webkit-appearance: none; */
+    display: block;
+    font-size: 1rem;
+    border: 2px solid #22577a;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #03045e;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #e0fbfc;
+}
+
+form > fieldset > label.sbs {
+    display: block;
+    color: #03045e;
+    padding: .75rem 0;
+}
+
+form > input.submit-btn {
+    border: none;
+    background-color: #d00000;
+    color: #e0fbfc;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form > fieldset > label.top > input:required {
+    border-left: 7px solid #d00000;
+}
+
+form > fieldset > label.top > input:required:valid {
+    border-left: 7px solid #38b000;
+}
 
 /*----------- FOOTER --------------*/
 footer {

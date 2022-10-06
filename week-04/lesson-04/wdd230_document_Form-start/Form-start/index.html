@@ -58,25 +58,49 @@
                 required? Yes/no
                 placeholders -->
                 <legend>Applicant Information</legend>
-                <label>First Name:* <input type="text" name="fname" required></label>
-                <label>Last Name:* <input type="text" name="lname" required></label>
-                <label>Phone: <input type="tel" name="phone" placeholder="0123456789"></label>
-                <label>Email:* <input type="email" name="email" placeholder="johndoe@example.com" required></label>
-                <label>Website: <input type="url" name="url" placeholder="https://"></label>
+                <label class="top">First Name:* <input type="text" name="fname" required></label>
+                <label class="top">Last Name:* <input type="text" name="lname" required></label>
+                <label class="top">Phone: <input type="tel" name="phone" placeholder="0123456789"></label>
+                <label class="top">Email:* <input type="email" name="email" placeholder="johndoe@example.com" required></label>
+                <label class="top">Website: <input type="url" name="url" placeholder="https://"></label>
             </fieldset>
+
             <fieldset>
                 <legend>Course Information</legend>
                 <div>Audience</div>
-                <label><input type="radio" name="audience" value="beginner">Beginner</label>
-                <label><input type="radio" name="audience" value="intermediate">Intermediate</label>
-                <label><input type="radio" name="audience" value="advanced">Advanced</label>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client/label>
             </fieldset>
+
             <fieldset>
-                <legend>Applicant Information</legend>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completed-date"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">Please Select</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info-tech">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professional</option>
+                        <option value="cyber">Cyber Security</option>
+                    </select>
+                </label>
+
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
             </fieldset>
-            <fieldset>
-                <legend>Applicant Information</legend>
-            </fieldset>
+
+            <input type="submit" value="Propose My Course" class="submit-btn">
+            
         </form>
 
           

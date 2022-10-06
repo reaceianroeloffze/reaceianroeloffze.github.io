@@ -82,7 +82,7 @@ form > fieldset > label.top, form > fieldset > div {
 }
 
 form > fieldset > label.top > input, form > fieldset > label.top > select {
-    /* -webkit-appearance: none; */
+    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: 2px solid #22577a;

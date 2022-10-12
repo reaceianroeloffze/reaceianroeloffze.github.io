@@ -1,0 +1,131 @@
+@media screen and (min-width: 1300px) {
+
+    #content {
+        font-size: 1.3rem;
+    }
+
+    .banner {
+        font-size: 2rem;
+    }
+
+    .site-title {
+        font-size: 4rem;
+    }
+    .motto {
+        font-size: 2rem;
+    }
+
+    .title-logo {
+        width: 38%; 
+    }
+
+    .logo {
+        /* width: 150px; */
+        border-radius: 75px;
+    }
+
+    
+    nav > ul {
+        margin: 0 10% 0 10%;
+    }
+    nav > ul > li > a:hover {
+        background-color: #D6F5FF;
+        color: #550C18;
+    }
+
+    nav > ul > li > a:active {
+        background-color: #550C18;
+        color: #faff81;
+        transition: none;
+    }
+
+    nav > ul > li, footer {
+        font-size: unset;
+    }
+
+    main > div.hero-box > img {
+        width: 100%;
+        height: 500px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    main section.weather-summary {
+        width: 367px;
+        height: 265px;
+        top: 30%;
+        left: 9%;
+        font-size: 2rem;
+    }
+
+    .weather-summary > h3 {
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    article > p > a {
+        color: #25291C;
+    }
+
+    article > p > a:hover {
+        text-decoration: underline;
+    }
+
+    article > p > a:active {
+        color: #550C18;
+    }
+
+    article .article-img {
+        width: 550px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2.3rem;
+    }
+    
+    .map-and-contact > picture > .map {
+        width: 55%;
+    }
+
+    .contact-info > a > img {
+        width: 10%;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer > p {
+        font-size: 1.7rem;
+        line-height: 20px;
+    }
+
+    /* Gallery Page Styling */
+
+    #gallery-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure {
+        border-radius: 10px;
+        transition: color .3s, box-shadow .3s, transform .3s,background-color .3s;
+    }
+
+    figure:hover {
+        background-color: #faff81;
+        box-shadow: 0px 0px 20px 10px #550C18;
+        
+    }
+
+}

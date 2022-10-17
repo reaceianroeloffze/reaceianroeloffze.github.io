@@ -124,8 +124,36 @@
 
     figure:hover {
         background-color: #faff81;
-        box-shadow: 0px 0px 20px 10px #550C18;
-        
+        box-shadow: 0px 0px 20px 10px #550C18;  
     }
+
+    /* Storm Centre Page Styles */
+
+    form {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    label, input, textarea, select, form div {
+        font-size: 1rem;
+    }
+
+    form :option:hover {
+        background-color: #4D1804;
+        color: #D6F5FF;
+    }
+
+    form label.radio-sel {
+        display: block;
+        padding: 5px 0 5px 0;
+    }
+
+    form .submit-btn:hover {
+        background-color: #550C18;
+        color: #faff81;
+        border-color: #faff81;
+    }
+    
+    
 
 }

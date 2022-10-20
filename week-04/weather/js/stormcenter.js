@@ -2,13 +2,13 @@ const adjustSeverity = (stormRange) => {
     document.getElementById("valueRange").innerHTML = stormRange;
 }
 
-const selectOption = () => {
-	const s = document.querySelector('#selected');
-	const sel = document.querySelector('#stormRegion');
-	s.style.display = "block";
-	s.textContent = sel.value;
+// const selectOption = () => {
+// 	const s = document.querySelector('#selected');
+// 	const sel = document.querySelector('#stormRegion');
+// 	s.style.display = "block";
+// 	s.textContent = sel.value;
 	
-}
+// }
 
 // Validationg the Storm Centre Form
 
@@ -27,22 +27,20 @@ const zipCodeError = document.querySelector("#zip-code + span.error4");
 
 
 fullName.addEventListener("input", (event) => {
-	
 	if (fullName.validity.valid) {
 		fullNameError.textContent = "";
 		fullNameError.className = 'error1';
 	} else {
-		displayError();
+		displayError1();
 	}
 });
 
 email.addEventListener("input", (event) => {
-
 	if (email.validity.valid) {
 		emailError.textContent = "";
 		emailError.className = 'error2';
 	} else {
-		displayError();
+		displayError2();
 	}
 });
 
@@ -51,7 +49,7 @@ phoneNum.addEventListener("input", (event) => {
 		phoneNumError.textContent = "";
 		phoneNumError.className = 'error3';
 	} else {
-		displayError();
+		displayError3();
 	}
 });
 
@@ -60,22 +58,39 @@ zipCode.addEventListener("input", (event) => {
 		zipCodeError.textContent = "";
 		zipCodeError.className = 'error4';
 	} else {
-		displayError();
+		displayError4();
 	}
 });
 
 form.addEventListener("submit", (event) => {
-	if (form.validity.valid) {
-		displayError();
+	if (!fullName.validity.valid) {
+		displayError1()
 		event.preventDefault();
 	}
 });
 
-const displayError = () => {
-	if (email.validity.typeMismatch || email.validity.valueMissing) {
-		emailError.textContent = 'Please enter a valid Email Address.'
+form.addEventListener('submit', (event) => {
+	if (!email.validity.valid) {
+		displayError2()
+		event.preventDefault();
 	}
+});
 
+form.addEventListener('submit', (event) => {
+	if (!phoneNum.validity.valid) {
+		displayError3()
+		event.preventDefault();
+	}
+});
+
+form.addEventListener('submit', (event) => {
+	if (!zipCode.validity.valid) {
+		displayError4()
+		event.preventDefault();
+	}
+});
+
+const displayError1 = () => {
 	if (fullName.validity.tooShort) {
 		fullNameError.textContent = `Must be a minimum of ${fullName.minLength} characters. You have only entered ${fullName.value.length}.`;
 	} else if (fullName.validity.typeMismatch) {
@@ -84,6 +99,18 @@ const displayError = () => {
 		fullNameError.textContent = 'Your full name is required. Please enter your full name.';
 	}
 
+	fullNameError.className = 'error1 active';
+};
+
+const displayError2 = () => {
+	if (email.validity.typeMismatch || email.validity.valueMissing) {
+		emailError.textContent = 'Please enter a valid Email Address.'
+	}
+
+	emailError.className = 'error2 active';
+};
+
+const displayError3 = () => {
 	if (phoneNum.validity.typeMismatch) {
 		phoneNumError.textContent = 'Please only enter numbers.';
 	} else if (phoneNum.validity.tooShort) {
@@ -91,17 +118,19 @@ const displayError = () => {
 	} else if (phoneNum.validity.tooLong) {
 		phoneNumError = `A phone number only contains ${phoneNum.maxLength}. You have exceeded this amount by ${phoneNum.value.length - phoneNum.maxLength}.`;
 	} else if (phoneNum.validity.valueMissing) {
-		phoneNumError = 'Your Phone Number is required. Please enter your Phone Number.';
+		phoneNumError.textContent = 'Your Phone Number is required. Please enter your Phone Number.';
 	}
 
-	if (zipCode.validity.tooShort || zipCode.validity.tooLong) {
+	phoneNumError.className = 'error3 active';
+};
+
+const displayError4 = () => {
+	
+	if (zipCode.validity.tooLong) {
 		zipCodeError.textContent = 'A Zip Code contains exactly 5 digits Please enter a 5-digit Zip Code.';
 	} else if (zipCode.validity.valueMissing) {
 		zipCodeError.textContent = 'Your Zip Code is required. Please enter your Zip Code.';
 	}
-
-	fullNameError.className = 'error1 active';
-	emailError.className = 'error2 active';
-	phoneNumError.className = 'error3 active';
+	
 	zipCodeError.className = 'error4 active';
 };

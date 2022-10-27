@@ -48,15 +48,15 @@
                         <span class="error1" aria-live="polite"></span>
                     </label>
                     <label class="block">Email: 
-                        <input type="email" name="email" id="email" placeholder="example@email.com">
-                        <span class="error2" pattern="[@{1}.{1,2}]" aria-live="polite"></span>
+                        <input type="email" name="email" id="email" pattern="[@{1}.{1,2}]" placeholder="example@email.com">
+                        <span class="error2" aria-live="polite"></span>
                     </label>
                     <label class="block">Phone Number:*
                         <input type="tel" name="phone-number" id="phone-num" required placeholder="0123456789" minlength="10" maxlength="10">
                         <span class="error3" aria-live="polite"></span>
                     </label>
                     <label class="block">Zip Code:*
-                        <input type="number" name="zip-code" id="zip-code" required min="00000" max="99999" pattern="(\d{5}([\-]\d{4})?)">
+                        <input type="number" name="zip-code" id="zip-code" required min="00000" max="99999">
                         <span class="error4" aria-live="polite"></span>
                     </label>
                 </fieldset>
@@ -115,7 +115,7 @@
                 <fieldset class="additional-info">
                     <legend>Additional Information</legend>
                     <label class="block">Additional Information or Comments:
-                        <textarea name="add-info" rows="10" cols="30" autocomplete="on" autocorrect="on" placeholder="Live in a Forest. Lightning could cause a fire."></textarea>
+                        <textarea name="add-info" rows="10" cols="30" autocomplete="on" placeholder="Live in a Forest. Lightning could cause a fire."></textarea>
                     </label>
                 </fieldset>
                 <input type="submit" value="Report a Storm" class="submit-btn">

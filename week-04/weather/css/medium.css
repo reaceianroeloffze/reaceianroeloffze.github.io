@@ -186,6 +186,13 @@
         margin: 20px 0 20px 0;
     }
 
+    /* Storm Centre Page Styles */
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     @media screen and (min-width: 1280px) {
         
         .title-logo {

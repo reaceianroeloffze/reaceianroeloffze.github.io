@@ -311,8 +311,16 @@ figcaption {
     color: #550C18;
 }
 
+.form-main {
+    background-image: url("../images/form-background.jpg");
+    width: 100%;
+    padding: .5rem;
+    background-size: cover;
+}
+
 form {
-    padding-bottom: 1.5rem ;
+    padding-bottom: 1.5rem;
+    opacity: 0.7;
 }
 
 fieldset, input, textarea, legend, select {
@@ -346,7 +354,7 @@ input, textarea, select {
     color: #4D1804;
 }
 
-form input {
+form input, form select, form textarea {
     outline: none;
 }
 
@@ -360,12 +368,14 @@ form input#stormRange {
 }
 
 form span#valueRange {
-    margin-left: 9.3rem;
+    display: block;
+    text-align: center;
+    /* margin-left: 9.3rem; */
 }
 
 form label.block input, form select, form textarea {
     width: 100%;
-    max-width: 30rem;
+    /* max-width: 30rem; */
 }
 
 form label.block, form div {
@@ -407,6 +417,8 @@ form label.radio-sel {
 
 form textarea {
     padding: 5px 10px;
+    color: #4D1804;
+    background-color: #D6F5FF;
 }
 
 form .submit-btn {

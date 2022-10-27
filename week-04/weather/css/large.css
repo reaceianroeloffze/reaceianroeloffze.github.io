@@ -129,6 +129,10 @@
 
     /* Storm Centre Page Styles */
 
+    .form-main {
+        background-image: url("../images/form-background-large.webp");
+    }
+
     form {
         width: 25%;
         margin: 0 auto;

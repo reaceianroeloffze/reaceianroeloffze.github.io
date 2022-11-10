@@ -4,34 +4,19 @@
     box-sizing: border-box;
 }
 
-#content, .banner {
-    margin: 0 auto;
-    width: 100%;
-    font-family: Russo One, sans-serif;
-    background-color: #D6F5FF;
-    font-size: 1.2rem;
+p {
+    letter-spacing: 1px;
 }
-
-body > .banner {
-    font-family: Russo One, sans-serif;
-    text-align: center;
-    align-self: center;
-    background-color: #D6F5FF;
-    color: #4D1804;
-    padding: 20px 0 20px 0;
-    border-bottom: 2px solid #550C18;
-    margin: 0;
- }
 
 h1, h2, h3, h4 {
     font-family: Bangers, cursive;
     letter-spacing: 1px;
     padding: 0;
+    text-align: center;
 }
 
 h2 {
     font-size: 2.5rem;
-    text-align: center;
 }
 
 h3 {
@@ -130,7 +115,10 @@ nav > ul > li > a {
     transition: all .2s ease-in-out;
 }
 
-.navigation > ul > li.preston-page > a {
+.navigation > ul > li.preston-page > a,
+.gallery-navigation > ul > li.gallery-page > a,
+.storm-navigation > ul > li.storm-center > a,
+.home-navigation > ul > li.homepage > a {
     background-color: #faff81;
     color: #550C18;
 }
@@ -145,9 +133,40 @@ main {
     margin: 0 auto;
 }
 
-main > .page-title, .condition {
+/* Homepage Layout */
+
+em, strong {
+    /* font-weight: 900; */
+    background-color: #4D1804;
+    color: #faff81;
+    padding: 0 3px 0 3px;
+}
+
+/* Preston Page */
+
+#content, .banner {
+    margin: 0 auto;
+    width: 100%;
+    font-family: Russo One, sans-serif;
+    background-color: #D6F5FF;
+    font-size: 1.2rem;
+}
+
+body > .banner {
+    font-family: Russo One, sans-serif;
+    text-align: center;
+    align-self: center;
+    background-color: #D6F5FF;
+    color: #4D1804;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid #550C18;
+    margin: 0;
+}
+
+main .page-title,
+.condition {
     background-color: #550C18;
-    color: #D6F5FF;
+    color: #faff81;
     border-radius: 50px;
     padding: 7px 0 7px 0;
     letter-spacing: 2px;
@@ -159,29 +178,13 @@ article, .map-and-contact, .hero-box {
     margin-bottom: 15px;
 }
 
-main > article {
-    padding: 10px;
-    border: 3px solid #4D1804;
-    background-color: #faff81;
-    color: #4D1804;    
-}
-
-article > p > a:active {
-    color: #550C18;
-}
-
-.page-title {
-    text-align: center;
-    color: #550C18;
-}
-
-main > div.hero-box {
+main div.hero-box {
     padding: 0;
 }
 
-main > div.hero-box img {
+main div.hero-box img {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     border: 3px solid #550C18;
 }
 
@@ -236,7 +239,18 @@ div.days > div.saturday {
     border-radius: 0 0 10px 10px;
 }
 
-article .article-img {
+main > article {
+    padding: 10px;
+    border: 3px solid #4D1804;
+    background-color: #faff81;
+    color: #4D1804;    
+}
+
+article > p > a:active {
+    color: #550C18;
+}
+
+article img {
     border: 3px solid #550C18;
     width: 100%;
 }
@@ -251,6 +265,10 @@ article > h2 {
     letter-spacing: 2px;
 }
 
+.weather-article h2 {
+    padding: 10px;
+}
+
 footer {
     padding: 5px;
     text-align: center;
@@ -260,6 +278,10 @@ footer {
 
 footer > div.map-and-contact {
     color: #faff81;
+}
+
+footer > p {
+    letter-spacing: normal;
 }
 
 article, .map-and-contact, img {
@@ -299,17 +321,7 @@ figcaption {
     color: #550C18;
 }
 
-.gallery-navigation > ul > li.gallery-page >a {
-    background-color: #faff81;
-    color: #550C18;
-}
-
 /* Storm Centre Page Styles */
-
-.storm-navigation > ul > li.storm-center > a {
-    background-color: #faff81;
-    color: #550C18;
-}
 
 .form-main {
     background-image: url("../images/form-background-small.webp");
@@ -428,7 +440,6 @@ form .submit-btn {
     font-size: 1.5rem;
     margin-left: 1.1rem;
     border: 3px outset #550C18;
-    
 } 
 
 form .submit-btn:active {
@@ -437,11 +448,6 @@ form .submit-btn:active {
     border-style: inset;
     border-color: #faff81;
 }
-
-
-/* form > fieldset.storm-info > label.radio-sel {
-    display: unset;
-} */
 
 @media screen and (max-width: 280px) {
     

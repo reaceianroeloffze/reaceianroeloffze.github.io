@@ -23,7 +23,6 @@
         /* width: 150px; */
         border-radius: 75px;
     }
-
     
     nav > ul {
         margin: 0 10% 0 10%;
@@ -43,9 +42,9 @@
         font-size: unset;
     }
 
-    main > div.hero-box > img {
+    main div.hero-box img {
         width: 100%;
-        height: 500px;
+        height: 700px;
     }
 
     main {
@@ -58,6 +57,10 @@
         top: 30%;
         left: 9%;
         font-size: 2rem;
+    }
+
+    #home-main > article img {
+        width: 500px;
     }
 
     .weather-summary > h3 {

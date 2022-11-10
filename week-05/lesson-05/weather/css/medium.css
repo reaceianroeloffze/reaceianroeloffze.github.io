@@ -66,7 +66,7 @@
         width: 95%;
     }
 
-    main > div.hero-box > img {
+    main div.hero-box img {
         width: 100%;
         height: 400px;
     }
@@ -125,13 +125,13 @@
         justify-items: center;
     } */
 
-    article .article-img {
+    article img {
         float: right;
         width: 370px;
         margin-left: 15px;
     }
 
-    main > .page-title, .condition {
+    main .page-title, .condition {
         margin-left: unset;
         margin-right: unset;
     }

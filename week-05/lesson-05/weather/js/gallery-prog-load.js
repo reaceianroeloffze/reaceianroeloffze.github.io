@@ -4,7 +4,7 @@
 // specify an image threshold before loading and from what position from the start of each side of the viewport to start loading the real images.
 const imgOptions = {
     threshold: 0,
-    rootMargin: '0px, 0px, -500px, 0px'
+    rootMargin: '0px, 0px, 200px, 0px'
 };
 
 let imagesToLoad = document.querySelectorAll('[data-srcset]');

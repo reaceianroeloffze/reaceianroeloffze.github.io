@@ -8,6 +8,7 @@ const imgOptions = {
 };
 
 let imagesToLoad = document.querySelectorAll('[data-srcset]');
+let imagesToLoad2 = document.querySelectorAll('[data-src]');
 
 const loadImages = (image) => {
     // image.setAttribute('src', image.getAttribute('data-src'));
@@ -36,6 +37,38 @@ imagesToLoad.forEach((img) => {
 });
 } else {
 imagesToLoad.forEach((img) => {
+    loadImages(img);
+});
+
+}
+
+const loadImages2 = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    // image.setAttribute('srcset', image.getAttribute('data-srcset'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+        // image.removeAttribute('data-srcset');
+    };
+};
+
+imagesToLoad2.forEach((img) => {
+    loadImages2(img);
+    });
+
+if ('IntersectionObserver' in window) {
+const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+    if (item.isIntersecting) {
+        loadImages2(item.target);
+        observer.unobserve(item.target);
+    }
+    });
+});
+imagesToLoad.forEach((img) => {
+    observer.observe(img);
+});
+} else {
+imagesToLoad2.forEach((img) => {
     loadImages(img);
 });
 

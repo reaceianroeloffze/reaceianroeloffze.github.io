@@ -12,7 +12,7 @@ h1, h2, h3, h4 {
     font-family: Bangers, cursive;
     letter-spacing: 1px;
     padding: 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h2 {
@@ -133,10 +133,21 @@ main {
     margin: 0 auto;
 }
 
+main h1,
+main h2 {
+    background-color: #550C18;
+    color: #faff81;
+    border-radius: 50px;
+    padding: 7px 0 7px 0;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
 /* Homepage Layout */
 
 em, strong {
-    /* font-weight: 900; */
     background-color: #4D1804;
     color: #faff81;
     padding: 0 3px 0 3px;
@@ -161,17 +172,6 @@ body > .banner {
     padding: 20px 0 20px 0;
     border-bottom: 2px solid #550C18;
     margin: 0;
-}
-
-main .page-title,
-.condition {
-    background-color: #550C18;
-    color: #faff81;
-    border-radius: 50px;
-    padding: 7px 0 7px 0;
-    letter-spacing: 2px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 article, .map-and-contact, .hero-box {
@@ -203,6 +203,8 @@ main section.weather-summary {
     padding-bottom: 10px;
     border-bottom: 3px solid #faff81;
     font-weight: normal;
+    border-radius: unset;
+    background-color: unset;
 }
 
 main > div.forecast {

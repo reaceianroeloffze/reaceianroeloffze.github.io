@@ -176,6 +176,7 @@ main#home-main button {
 #home-main button::after {
     content: '\25BE';
     float: right;
+    /* font-size: 2rem; */
 }
 
 #home-main button.expand {

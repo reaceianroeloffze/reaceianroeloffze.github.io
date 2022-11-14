@@ -8,7 +8,6 @@ const imgOptions = {
 };
 
 let imagesToLoad = document.querySelectorAll('[data-srcset]');
-let imagesToLoad2 = document.querySelectorAll('[data-src]');
 
 const loadImages = (image) => {
     // image.setAttribute('src', image.getAttribute('data-src'));
@@ -24,7 +23,7 @@ imagesToLoad.forEach((img) => {
     });
 
 if ('IntersectionObserver' in window) {
-const observer = new IntersectionObserver((items, observer) => {
+    const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
     if (item.isIntersecting) {
         loadImages(item.target);
@@ -40,39 +39,41 @@ imagesToLoad.forEach((img) => {
     loadImages(img);
 });
 
-}
+};
 
-const loadImages2 = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
+let imagesToLoad2 = document.querySelectorAll('[data-src]');
+
+const loadImages2 = (image2) => {
+    image2.setAttribute('src', image2.getAttribute('data-src'));
     // image.setAttribute('srcset', image.getAttribute('data-srcset'));
-    image.onload = () => {
-        image.removeAttribute('data-src');
+    image2.onload = () => {
+        image2.removeAttribute('data-src');
         // image.removeAttribute('data-srcset');
     };
 };
 
-imagesToLoad2.forEach((img) => {
-    loadImages2(img);
+imagesToLoad2.forEach((img2) => {
+    loadImages2(img2);
     });
 
 if ('IntersectionObserver' in window) {
-const observer = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
-    if (item.isIntersecting) {
-        loadImages2(item.target);
-        observer.unobserve(item.target);
+    const observer = new IntersectionObserver((items2, observer) => {
+    items2.forEach((item2) => {
+    if (item2.isIntersecting) {
+        loadImages2(item2.target);
+        observer.unobserve(item2.target);
     }
     });
 });
-imagesToLoad.forEach((img) => {
-    observer.observe(img);
+imagesToLoad2.forEach((img2) => {
+    observer.observe(img2);
 });
 } else {
-imagesToLoad2.forEach((img) => {
-    loadImages(img);
+imagesToLoad2.forEach((img2) => {
+    loadImages2(img2);
 });
 
-}
+};
 
 // // Create a function to replace the data-src and data-srcset attributes and their contents to actual src and srcset attributes.
 // const preloadImage = (img) => {

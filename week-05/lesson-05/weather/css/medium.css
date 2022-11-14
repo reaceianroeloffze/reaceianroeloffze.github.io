@@ -211,6 +211,12 @@
             width: 470px;
         }
 
+        /* Homepage Styling */
+
+        #home-main > div > h2.section-heading {
+            display: block;
+        }
+
     }
 
 }

@@ -159,7 +159,7 @@ article, .map-and-contact, .hero-box {
     margin-bottom: 15px;
 }
 
-main > article {
+main article {
     padding: 10px;
     border: 3px solid #4D1804;
     background-color: #faff81;

@@ -8,14 +8,14 @@ p {
     letter-spacing: 1px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, #home-main button {
     font-family: Bangers, cursive;
     letter-spacing: 1px;
     padding: 0;
     /* text-align: center; */
 }
 
-h2 {
+h2, #home-main button {
     font-size: 2.5rem;
 }
 
@@ -62,7 +62,8 @@ nav {
     border-bottom: 3px solid #faff81;
 }
 
-nav > #menu-button {
+nav > #menu-button,
+main#home-main button {
     background: transparent;
     border: none;
     color: #D6F5FF;
@@ -153,6 +154,80 @@ em, strong {
     padding: 0 3px 0 3px;
 }
 
+main#home-main > div {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0 10px 0 10px;
+}
+
+main#home-main button {
+    color: #4D1804;
+    background-color: #faff81;
+    border: 3px solid #4D1804;
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    margin-left: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#home-main button::after {
+    content: '\25BE';
+    float: right;
+}
+
+#home-main button.expand {
+    background-color: #4D1804;
+    color: #faff81;
+    border-radius: 50px 50px 0 0;
+    text-align: center;
+}
+
+#home-main button.expand::after {
+    content: '\25B4';
+    
+}
+
+main#home-main > div > .section-heading {
+    display: inline;
+    background-color: unset;
+    color: #550C18;
+}
+
+main#home-main article {
+    display: none;
+}
+
+/* main#home-main button.section-toggle > span:nth-child(1) {
+    display: block;
+}
+
+main#home-main button.section-toggle > span:nth-child(2) {
+    display: none;
+}
+
+main#home-main button.section-toggle.expand > span:nth-child(1) {
+    display: none;
+}
+
+main#home-main button.section-toggle.expand > span:nth-child(2) {
+    display: block;
+} */
+
+main#home-main > div.expand {
+    border-bottom: hidden;
+    margin-bottom: 0;
+
+}
+
+main#home-main article.expand {
+    display: block;
+    border-top: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
 /* Preston Page */
 
 #content, .banner {
@@ -241,7 +316,7 @@ div.days > div.saturday {
     border-radius: 0 0 10px 10px;
 }
 
-main > article {
+main article {
     padding: 10px;
     border: 3px solid #4D1804;
     background-color: #faff81;

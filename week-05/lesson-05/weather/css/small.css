@@ -8,6 +8,10 @@ p {
     letter-spacing: 1px;
 }
 
+img {
+    width: 100%;
+}
+
 h1, h2, h3, h4, #home-main button {
     font-family: Bangers, cursive;
     letter-spacing: 1px;
@@ -15,7 +19,7 @@ h1, h2, h3, h4, #home-main button {
     /* text-align: center; */
 }
 
-h2, #home-main button {
+h2 {
     font-size: 2.5rem;
 }
 
@@ -171,11 +175,12 @@ main#home-main button {
     border-radius: 50px;
     cursor: pointer;
     transition: 0.2s;
+    font-size: 2.3rem;
 }
 
-#home-main button::after {
+#home-main button::before {
     content: '\25BE';
-    float: right;
+    float: left;
     /* font-size: 2rem; */
 }
 
@@ -183,12 +188,10 @@ main#home-main button {
     background-color: #4D1804;
     color: #faff81;
     border-radius: 50px 50px 0 0;
-    text-align: center;
 }
 
-#home-main button.expand::after {
-    content: '\25B4';
-    
+#home-main button.expand::before {
+    content: '\25B4';    
 }
 
 main#home-main > div > .section-heading {
@@ -217,11 +220,11 @@ main#home-main button.section-toggle.expand > span:nth-child(2) {
     display: block;
 } */
 
-main#home-main > div.expand {
+/* main#home-main > div.expand {
     border-bottom: hidden;
     margin-bottom: 0;
 
-}
+} */
 
 main#home-main article.expand {
     display: block;

@@ -50,16 +50,16 @@
     }
 
     h2 {
-        font-size: 2.3rem;
+        font-size: 2.8rem;
     }
 
     h3 {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         font-weight: unset;
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
 
     main {
@@ -193,6 +193,43 @@
         margin: 0 auto;
     }
 
+    /* homepage styles */
+
+    #home-main > div > h2.section-heading {
+        display: block;
+    }
+
+    div#hazards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        
+    }
+
+    #hazards button,
+    #hazards section,
+    #hazards picture {
+        width: 100%;
+    }
+
+    #hazards section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 30% 31% 10% 20.7%;
+        align-items: center;
+        /* row-gap: 20px; */
+        /* margin-bottom: 30px; */
+    }
+
+    #hazards button {
+        grid-column: 1/ span 2;
+    }
+
+    #hazards section.veld-fire picture,
+    #hazards section.heat-wave picture {
+        align-self: end;
+    }
+
     @media screen and (min-width: 1280px) {
         
         .title-logo {
@@ -211,11 +248,23 @@
             width: 470px;
         }
 
-        /* Homepage Styling */
+       
 
-        #home-main > div > h2.section-heading {
-            display: block;
+        /* #hazards section.veld-fire p,
+        #hazards.veld-fire h2,
+        #hazards.veld-fire picture {
+            grid-column: 1/ span 3;
         }
+
+        #hazards section.heat-wave p,
+        #hazards.heat-wave h2,
+        #hazards.heat-wave picture {
+            grid-column: 4/7;
+        } */
+
+        /* #hazards section.heat-wave {
+            grid-column: 7/13;
+        } */
 
     }
 

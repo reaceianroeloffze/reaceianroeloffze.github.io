@@ -59,10 +59,6 @@
         font-size: 2rem;
     }
 
-    #home-main > article img {
-        width: 500px;
-    }
-
     .weather-summary > h3 {
         font-weight: 700;
         letter-spacing: 2px;
@@ -80,11 +76,11 @@
         color: #550C18;
     }
 
-    article .article-img {
+    article img {
         width: 550px;
     }
-
-    h2 {
+    
+    h2, main#home-main button {
         font-size: 3rem;
     }
 
@@ -161,6 +157,63 @@
         border-color: #faff81;
     }
     
+    /* Homepage Styles */
+
+    main#home-main div {
+        padding: 0;
+    }
+
+    #home-main button.expand {
+        text-align: center;
+        /* background: linear-gradient(to right, #faff81 50%, #4D1804);
+        color: #4D1804; */
+    }
+
+    #home-main button.expand::before {
+        float: unset;
+    }
+
+    #hazards {
+        gap: 30px;
+    }
+
+    #hazards button {
+        grid-row: 1/2;
+    }
+
+    #hazards section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 30% 30% 10%;
+        column-gap: 30px;
+    }
+
+    div#hazards section.veld-fire,
+    #hazards section.heat-wave {
+        grid-column: 1/3;
+        align-items: center;
+    }
+
+    .veld-fire {
+        grid-row: 2/3;
+    }
     
+    .heat-wave {
+        grid-row: 3/4;
+    }
+    
+    .veld-fire h2, .veld-fire p, .heat-wave picture {
+        grid-column: 1/2;
+        /* grid-row: 1/2; */
+    }
+
+    .veld-fire picture, .heat-wave h2, .heat-wave p {
+        grid-column: 2/3;
+    }
+
+    .veld-fire picture, .heat-wave picture {
+        grid-row: 1/5;
+        place-self: stretch;
+    }
+  
 
 }

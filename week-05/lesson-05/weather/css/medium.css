@@ -195,24 +195,17 @@
 
     /* homepage styles */
 
-    #home-main > div > h2.section-heading {
-        display: block;
-    }
-
-    div#hazards {
+    #hazards.expand {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
-        
+        border: 3px solid #4D1804;
+        border-top: none;
+        border-radius: 50px 50px 10px 10px;
+        padding: 0;
     }
 
-    #hazards button,
-    #hazards section,
-    #hazards picture {
-        width: 100%;
-    }
-
-    #hazards section {
+    #hazards section.expand {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 30% 31% 10% 20.7%;
@@ -221,13 +214,54 @@
         /* margin-bottom: 30px; */
     }
 
+
+    #hazards button,
+    #hazards section,
+    #hazards picture {
+        width: 100%;
+    }
+    #hazards img {
+        height: 100%;
+    }
+
+
     #hazards button {
         grid-column: 1/ span 2;
     }
 
-    #hazards section.veld-fire picture,
-    #hazards section.heat-wave picture {
+    #hazards button.expand {
+        margin: 0;
+    }
+
+    #hazards section.veld-fire.expand picture,
+    #hazards section.heat-wave.expand picture {
         align-self: end;
+    }
+
+    #hazards section.expand {
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 0 15px 0 15px;  
+    }
+
+    #town-info section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .preston-info span,
+    .preston-heading,
+    .soda-springs-info span,
+    .soda-springs-heading,
+    .fish-haven-info img {
+        grid-column: 1;
+    }
+
+    .fish-haven-info span,
+    .fish-haven-heading,
+    .preston-info img,
+    .soda-springs-info img {
+        grid-column: 2;
     }
 
     @media screen and (min-width: 1280px) {

@@ -60,11 +60,11 @@ header {
     margin-top: 0;
 }
 
-nav {
+/* nav {
     top: 0px;
     z-index: 1;
     border-bottom: 3px solid #faff81;
-}
+} */
 
 nav > #menu-button,
 main#home-main button {
@@ -152,6 +152,15 @@ main h2 {
 
 /* Homepage Layout */
 
+.intro h2 {
+    font-size: 2.3rem;
+}
+
+.intro-par {
+    padding: 0 10px 0 10px;
+    
+}
+
 em, strong {
     background-color: #4D1804;
     color: #faff81;
@@ -181,7 +190,6 @@ main#home-main button {
 #home-main button::before {
     content: '\25BE';
     float: left;
-    /* font-size: 2rem; */
 }
 
 #home-main button.expand {
@@ -194,42 +202,66 @@ main#home-main button {
     content: '\25B4';    
 }
 
-main#home-main > div > .section-heading {
-    display: inline;
-    background-color: unset;
-    color: #550C18;
-}
-
 main#home-main article {
     display: none;
 }
-
-/* main#home-main button.section-toggle > span:nth-child(1) {
-    display: block;
-}
-
-main#home-main button.section-toggle > span:nth-child(2) {
-    display: none;
-}
-
-main#home-main button.section-toggle.expand > span:nth-child(1) {
-    display: none;
-}
-
-main#home-main button.section-toggle.expand > span:nth-child(2) {
-    display: block;
-} */
-
-/* main#home-main > div.expand {
-    border-bottom: hidden;
-    margin-bottom: 0;
-
-} */
 
 main#home-main article.expand {
     display: block;
     border-top: hidden;
     border-radius: 0 0 10px 10px;
+}
+
+#hazards .heat-wave,
+#hazards .veld-fire {
+    display: none;
+}
+
+#hazards img {
+    border: 3px solid #550C18;
+}
+
+#hazards section.expand {
+    display: block;
+    border: 3px solid #4D1804;
+    padding: 0 15px 15px 15px;
+}
+
+#hazards .veld-fire.expand {
+    border-bottom: none;
+}
+
+#hazards .heat-wave.expand {
+    border-radius: 0 0 10px 10px;
+}
+
+#hazards section.expand h2 {
+    margin-top: 20px;
+}
+
+#town-info > section {
+    background-color: #faff81;
+    color: #4D1804;
+    border-radius: 10px;
+    border: 3px solid #4D1804;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#town-info h2 {
+    background-color: unset;
+    color: #4D1804;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#town-info section span {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+#town-info section span, #town-info section img {
+text-align: center;
 }
 
 /* Preston Page */

@@ -129,7 +129,7 @@
     /* Storm Centre Page Styles */
 
     .form-main {
-        background-image: url("../images/form-background-large.webp");
+        background-image: url("../images/form-background.webp");
     }
 
     form {
@@ -174,46 +174,65 @@
     }
 
     #hazards {
-        gap: 30px;
+        gap: unset
     }
 
     #hazards button {
         grid-row: 1/2;
     }
 
-    #hazards section {
+    #hazards section.expand {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20% 30% 30% 10%;
         column-gap: 30px;
     }
 
-    div#hazards section.veld-fire,
-    #hazards section.heat-wave {
+    div#hazards section.veld-fire.expand,
+    #hazards section.heat-wave.expand {
         grid-column: 1/3;
         align-items: center;
     }
 
-    .veld-fire {
+    .veld-fire.expand{
         grid-row: 2/3;
     }
     
-    .heat-wave {
+    .heat-wave.expand {
         grid-row: 3/4;
     }
     
-    .veld-fire h2, .veld-fire p, .heat-wave picture {
+    .veld-fire.expand h2, .veld-fire.expand p, .heat-wave.expand picture {
         grid-column: 1/2;
         /* grid-row: 1/2; */
     }
 
-    .veld-fire picture, .heat-wave h2, .heat-wave p {
+    .veld-fire.expand picture, .heat-wave.expand h2, .heat-wave.expand p {
         grid-column: 2/3;
     }
 
-    .veld-fire picture, .heat-wave picture {
+    .veld-fire.expand picture, .heat-wave.expand picture {
         grid-row: 1/5;
-        place-self: stretch;
+        /* place-self: stretch; */
+    }
+
+    #hazards section.veld-fire.expand picture,
+    #hazards section.heat-wave.expand picture {
+        align-self: center;
     }
   
+    #town-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    #town-info button {
+        grid-column: span 3;
+    }
+
+    #town-info section {
+        display: unset;
+        
+    }
 
 }

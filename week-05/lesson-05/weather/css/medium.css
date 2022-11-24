@@ -210,6 +210,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 10% 30% 31% 10% 20.7%;
         align-items: center;
+        border: none;
         /* row-gap: 20px; */
         /* margin-bottom: 30px; */
     }
@@ -244,16 +245,16 @@
         padding: 0 15px 0 15px;  
     }
 
-    #town-info section {
+    #town-info section.expand {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .preston-info span,
-    .preston-heading,
-    .soda-springs-info span,
-    .soda-springs-heading,
-    .fish-haven-info img {
+    #town-info .preston-info span,
+    #town-info .preston-heading,
+    #town-info .soda-springs-info span,
+    #town-info .soda-springs-heading,
+    #town-info .fish-haven-info img {
         grid-column: 1;
     }
 

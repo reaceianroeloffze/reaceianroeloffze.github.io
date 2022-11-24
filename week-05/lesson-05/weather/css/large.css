@@ -174,17 +174,20 @@
     }
 
     #hazards {
-        gap: unset
+        gap: unset;
+        background-color: #faff81;
+        border-radius: 50px;
     }
 
     #hazards button {
         grid-row: 1/2;
     }
 
-    #hazards section.expand {
+    #home-main #hazards section.expand {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20% 30% 30% 10%;
         column-gap: 30px;
+        border: none;
     }
 
     div#hazards section.veld-fire.expand,
@@ -220,19 +223,34 @@
         align-self: center;
     }
   
-    #town-info {
+    #town-info.expand {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
+        border: 3px solid #4D1804;
+        border-top: none;
+        border-radius: 50px 50px 10px 10px;
     }
 
-    #town-info button {
+    #town-info.expand button {
         grid-column: span 3;
     }
 
-    #town-info section {
+    #town-info.expand section {
         display: unset;
-        
+    }
+
+    #town-info section.expand {
+        padding: 10px;
+    }
+
+    #town-info .preston-info.expand {
+        margin-right: 30px;
+    } 
+    #town-info .soda-springs-info.expand {
+        margin-left: 30px;
+        border-top: 3px solid #4D1804;
+        border-radius: 10px;
     }
 
 }

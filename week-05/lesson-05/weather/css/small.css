@@ -202,9 +202,15 @@ main#home-main button {
     content: '\25B4';    
 }
 
-main#home-main article {
+#hazards section,
+#town-info section,
+#weather-story article {
     display: none;
 }
+
+/* main#home-main article {
+    display: none;
+} */
 
 main#home-main article.expand {
     display: block;
@@ -212,23 +218,36 @@ main#home-main article.expand {
     border-radius: 0 0 10px 10px;
 }
 
-#hazards .heat-wave,
-#hazards .veld-fire {
-    display: none;
+#hazards section.expand,
+#town-info section.expand {
+    background-color: #faff81;
+    color: #4D1804;
 }
 
-#hazards img {
-    border: 3px solid #550C18;
+#hazards section.expand h2,
+#town-info section.expand h2 {
+    background-color: #4D1804;
+    color: #faff81;
+}
+
+/* #hazards .heat-wave,
+#hazards .veld-fire {
+    display: none;
+} */
+
+#home-main div img,
+#home-main div section,
+#home-main div article {
+    border: 3px solid #4D1804;
 }
 
 #hazards section.expand {
     display: block;
-    border: 3px solid #4D1804;
     padding: 0 15px 15px 15px;
 }
 
 #hazards .veld-fire.expand {
-    border-bottom: none;
+    border-bottom: hidden;
 }
 
 #hazards .heat-wave.expand {
@@ -239,28 +258,30 @@ main#home-main article.expand {
     margin-top: 20px;
 }
 
-#town-info > section {
-    background-color: #faff81;
-    color: #4D1804;
+#town-info section.expand {
+    display: block;
     border-radius: 10px;
-    border: 3px solid #4D1804;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 5px;
 }
 
-#town-info h2 {
-    background-color: unset;
-    color: #4D1804;
-    margin-bottom: 0;
-    margin-top: 0;
+#town-info .soda-springs-info.expand {
+    border-radius: 0 0 10px 10px;
+    border-top: hidden;
 }
 
-#town-info section span {
+#town-info section.expand h2 {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#town-info section.expand span {
     display: block;
     margin-bottom: 2rem;
 }
 
-#town-info section span, #town-info section img {
+#town-info section.expand span, #town-info section.expand img {
 text-align: center;
 }
 
@@ -613,6 +634,14 @@ form .submit-btn:active {
 
     div.days img {
         width: 37%;
+    }
+
+    #home-main .intro h2 {
+        font-size: 1.6rem;
+    }
+
+    #home-main div button {
+        font-size: 1.6rem;
     }
 
 }

@@ -8,16 +8,16 @@ const storyToggle = () => {
 
 const hazardToggle = () => {
     document.getElementById('hazards').classList.toggle('expand');
-    // document.getElementById('hazards').classList.toggle('expand-large');
     document.querySelector('.hazard-toggle').classList.toggle('expand');
     document.querySelector('.veld-fire').classList.toggle('expand');
-    // document.querySelector('.veld-fire').classList.toggle('expand-large');
     document.querySelector('.heat-wave').classList.toggle('expand');
-    // document.querySelector('.heat-wave').classList.toggle('expand-large');
 }
 
 const infoToggle = () => {
-    // document.querySelector('#town-info').classList.toggle('expand');
+    document.querySelector('#town-info').classList.toggle('expand');
+    document.querySelector('.preston-info').classList.toggle('expand');
+    document.querySelector('.soda-springs-info').classList.toggle('expand');
+    document.querySelector('.fish-haven-info').classList.toggle('expand');
     document.querySelector('.info-toggle').classList.toggle('expand');
 }
 

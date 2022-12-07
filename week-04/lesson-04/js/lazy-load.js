@@ -2,8 +2,8 @@
 let pendingImages = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
-    threshold: 1,
-    rootMargin: '0px 0px 200px 0px'
+    threshold: 0,
+    rootMargin: '0 0 0.5 0'
 };
 
 // Create a function to replace and remove the data-src attribute with an src attribute upon loading an image
@@ -15,28 +15,28 @@ const loadImages = (image) => {
 };
 
 // Loop through images and load them
-pendingImages.forEach((img) => {
-    loadImages(img);
-});
+// pendingImages.forEach((img) => {
+//     loadImages(img);
+// });
 
 // Create a condition to display the real image when it comes into the viewport, otherwise, display the placeholder.
 if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if (item.isIntersecting) {
-          loadImages(item.target);
-          observer.unobserve(item.target);
-        }
-      });
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
     });
     pendingImages.forEach((img) => {
-      observer.observe(img);
+        observer.observe(img);
     });
-  } else {
+} else {
     pendingImages.forEach((img) => {
-      loadImages(img);
+        loadImages(img);
     });
-  }
+}
 
 // Alternate way to do the above:
 

@@ -195,6 +195,10 @@
 
     /* homepage styles */
 
+    #home-main article img[data-src] {
+        height: 700px;
+    }
+
     #hazards.expand {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -203,6 +207,8 @@
         border-top: none;
         border-radius: 50px 50px 10px 10px;
         padding: 0;
+        background-color: #faff81;
+        border-radius: 50px 50px 10px 10px;
     }
 
     #hazards section.expand {

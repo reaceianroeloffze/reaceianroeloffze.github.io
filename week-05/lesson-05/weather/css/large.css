@@ -129,7 +129,7 @@
     /* Storm Centre Page Styles */
 
     .form-main {
-        background-image: url("../images/form-background.webp");
+        background-image: url("../images/form-background-large.webp");
     }
 
     form {
@@ -159,8 +159,16 @@
     
     /* Homepage Styles */
 
+    #home-main .intro h2 {
+        font-size: 3rem;
+    }
+
     main#home-main div {
         padding: 0;
+    }
+
+    #home-main article img[data-src] {
+        height: 1000px;
     }
 
     #home-main button.expand {
@@ -175,8 +183,6 @@
 
     #hazards {
         gap: unset;
-        background-color: #faff81;
-        border-radius: 50px;
     }
 
     #hazards button {

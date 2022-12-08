@@ -242,6 +242,8 @@
         grid-column: span 3;
     }
 
+    
+
     #town-info.expand section {
         display: unset;
     }

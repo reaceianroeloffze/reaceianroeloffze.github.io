@@ -13,7 +13,7 @@ const options2 = {
 }
 
 let update = document.querySelector('.date').innerText = new Date(document.lastModified).toLocaleDateString('en-gb', options2);
-console.log(update) // Display full format
+// console.log(update) // Display full format
 
 // Toggle responsive menu using classes
 const menuToggle = () => {
@@ -29,7 +29,7 @@ menuBtn.onclick = menuToggle;
 // Set a condition to display a banner above the header if the current day is Friday
 const currentDate = new Date();
 const currentDay = currentDate.getDay();
-console.log(currentDay);
+// console.log(currentDay);
 
 const preston = document.querySelector('.preston-body')
 

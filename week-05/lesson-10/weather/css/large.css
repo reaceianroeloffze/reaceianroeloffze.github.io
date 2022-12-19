@@ -1,0 +1,268 @@
+@media screen and (min-width: 1300px) {
+
+    #content {
+        font-size: 1.3rem;
+    }
+
+    .banner {
+        font-size: 2rem;
+    }
+
+    .site-title {
+        font-size: 4rem;
+    }
+    .motto {
+        font-size: 2rem;
+    }
+
+    .title-logo {
+        width: 38%; 
+    }
+
+    .logo {
+        /* width: 150px; */
+        border-radius: 75px;
+    }
+    
+    nav > ul {
+        margin: 0 10% 0 10%;
+    }
+    nav > ul > li > a:hover {
+        background-color: #D6F5FF;
+        color: #550C18;
+    }
+
+    nav > ul > li > a:active {
+        background-color: #550C18;
+        color: #faff81;
+        transition: none;
+    }
+
+    nav > ul > li, footer {
+        font-size: unset;
+    }
+
+    main div.hero-box img {
+        width: 100%;
+        height: 700px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    main section.weather-summary {
+        width: 400px;
+        height: 270px;
+        top: 30%;
+        left: 9%;
+        font-size: 2rem;
+    }
+
+    .weather-summary > h3 {
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    article > p > a {
+        color: #25291C;
+    }
+
+    article > p > a:hover {
+        text-decoration: underline;
+    }
+
+    article > p > a:active {
+        color: #550C18;
+    }
+
+    article img {
+        width: 550px;
+    }
+    
+    h2, main#home-main button {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    div.days section > img {
+        width: 50%;
+    }
+    
+    .map-and-contact > picture > .map {
+        width: 55%;
+    }
+
+    .contact-info > a > img {
+        width: 10%;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer > p {
+        font-size: 1.7rem;
+        line-height: 20px;
+    }
+
+    /* Gallery Page Styling */
+
+    #gallery-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure {
+        border-radius: 10px;
+        transition: color .3s, box-shadow .3s, transform .3s,background-color .3s;
+    }
+
+    figure:hover {
+        background-color: #faff81;
+        box-shadow: 0px 0px 20px 10px #550C18;  
+    }
+
+    /* Storm Centre Page Styles */
+
+    .form-main {
+        background-image: url("../images/form-background-large.webp");
+    }
+
+    form {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    label, input, textarea, select, form div {
+        font-size: 1rem;
+    }
+
+    form option:hover {
+        background-color: #4D1804;
+        color: #D6F5FF;
+    }
+
+    form label.radio-sel {
+        display: block;
+        padding: 5px 0 5px 0;
+    }
+
+    form .submit-btn:hover {
+        background-color: #550C18;
+        color: #faff81;
+        border-color: #faff81;
+    }
+    
+    /* Homepage Styles */
+
+    #home-main .intro h2 {
+        font-size: 3rem;
+    }
+
+    main#home-main div {
+        padding: 0;
+    }
+
+    #home-main article img[data-src] {
+        height: 1000px;
+    }
+
+    #home-main button.expand {
+        text-align: center;
+        /* background: linear-gradient(to right, #faff81 50%, #4D1804);
+        color: #4D1804; */
+    }
+
+    #home-main button.expand::before {
+        float: unset;
+    }
+
+    #hazards {
+        gap: unset;
+    }
+
+    #hazards button {
+        grid-row: 1/2;
+    }
+
+    #home-main #hazards section.expand {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 30% 30% 10%;
+        column-gap: 30px;
+        border: none;
+    }
+
+    div#hazards section.veld-fire.expand,
+    #hazards section.heat-wave.expand {
+        grid-column: 1/3;
+        align-items: center;
+    }
+
+    .veld-fire.expand{
+        grid-row: 2/3;
+    }
+    
+    .heat-wave.expand {
+        grid-row: 3/4;
+    }
+    
+    .veld-fire.expand h2, .veld-fire.expand p, .heat-wave.expand picture {
+        grid-column: 1/2;
+        /* grid-row: 1/2; */
+    }
+
+    .veld-fire.expand picture, .heat-wave.expand h2, .heat-wave.expand p {
+        grid-column: 2/3;
+    }
+
+    .veld-fire.expand picture, .heat-wave.expand picture {
+        grid-row: 1/5;
+        /* place-self: stretch; */
+    }
+
+    #hazards section.veld-fire.expand picture,
+    #hazards section.heat-wave.expand picture {
+        align-self: center;
+    }
+  
+    #town-info.expand {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        border: 3px solid #4D1804;
+        border-top: none;
+        border-radius: 50px 50px 10px 10px;
+    }
+
+    #town-info.expand button {
+        grid-column: span 3;
+    }
+
+    
+
+    #town-info.expand section {
+        display: unset;
+    }
+
+    #town-info section.expand {
+        padding: 10px;
+    }
+
+    #town-info .preston-info.expand {
+        margin-right: 30px;
+    } 
+    #town-info .soda-springs-info.expand {
+        margin-left: 30px;
+        border-top: 3px solid #4D1804;
+        border-radius: 10px;
+    }
+
+}

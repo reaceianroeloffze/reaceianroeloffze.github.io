@@ -25,14 +25,37 @@ const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch (forecastURL)
 	.then((response) => response.json())
 	.then((forecastObj) => {
-		console.log(forecastObj);
-		for (let i = 0; i < forecastObj.length; i++ ) {
-			forecastObj.list[i].filter(() => {
-				if (forecastObj.list[i].clouds.dt_txt === '18:00:00') {
-					console.log(forecastObj.list[i].main.temp);
-					// return forecastObj.list[i].main.temp;
-					document.querySelectorAll('#daily-forecast').textContent = forecastObj.list[i].main.temp;
-				}
-			});
+		// console.log(forecastObj);
+		for (let i = 0; i < forecastObj.list.length; i++ ) {
+			if (forecastObj.list[i].dt_txt.includes('18:00:00') === true) {
+				console.log(forecastObj.list[i]);
+				console.log(forecastObj.list[i].main.temp);
+				
+				let date = forecastObj.list[i].dt;
+				let temp = `${forecastObj.list[i].main.temp}°F`;
+				let forcastImg = `https://openweathermap.org/img/w/${forecastObj.list[i].weather[0].icon}.png`;
+				let weatherDescr = forecastObj.list[i].weather[0].description;
+
+				let fiveDayForecast = {};
+				let dayOfWeek = 0;
+
+				today = {
+					'date': date,
+					'temp': temp,
+					'icon': forcastImg,
+					'weatherDescr': weatherDescr
+				};
+
+				fiveDayForecast[dayOfWeek] = currentDay;
+				dayOfWeek = dayOfWeek + 1;
+			};
 		};
+
+		const forecast = document.querySelector('.forecast');
+		
+		for (i = 0; i < 5; i++) {
+			let currentForecast = document.createElement('div');
+			currentForecast.className = 'days';
+			
+		}
 	});

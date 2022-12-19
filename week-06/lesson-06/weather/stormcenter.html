@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Reace Ian Roeloffze">
+    <meta name="Description" content="Content for Nature's Moods Storm Centre Page">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center | Nature's Moods</title>
+</head>
+<body class="form-body">
+    <div id="content">
+        <header>
+            <div class="title-logo">
+                <div class="logo-box">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/natures-moods-logo-mobile.jpg">
+                        <img class="logo" src="images/natures-moods-logo.jpg" alt="Nature's Moods Logo">
+                    </picture>
+                </div>
+                <section class="site-title-and-motto">
+                    <h1 class="site-title">Nature's Moods</h1>
+                    <div class="motto">Where Nature Does The Talking</div> 
+                </section>
+            </div>
+            <nav class="storm-navigation">
+                <button id="menu-button"><span>&#8943;</span><span>&#8942;</span></button>
+                <ul id="main-nav">
+                    <li class="homepage"><a href="index.html">Home</a></li>
+                    <li class="preston-page"><a href="preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li class="storm-center"><a href="stormcenter.html">Storm Center</a></li>
+                    <li class="gallery-page"><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="form-main">
+            <form action="thanks.html" method="get" class="storm-form">
+                <fieldset class="personal-info">
+                    <legend>Personal Information</legend>
+                    <label class="block">Full Name:*
+                        <input type="text" name="full-name" id="full-name" minlength="5" required    placeholder="First, Middle, Last" pattern="[ A-Za-z]*">
+                        <span class="error1" aria-live="polite"></span>
+                    </label>
+                    <label class="block">Email: 
+                        <input type="email" name="email" id="email" pattern="[@{1}.{1,2}]" placeholder="example@email.com">
+                        <span class="error2" aria-live="polite"></span>
+                    </label>
+                    <label class="block">Phone Number:*
+                        <input type="tel" name="phone-number" id="phone-num" required placeholder="0123456789" minlength="10" maxlength="10">
+                        <span class="error3" aria-live="polite"></span>
+                    </label>
+                    <label class="block">Zip Code:*
+                        <input type="number" name="zip-code" id="zip-code" required min="00000" max="99999">
+                        <span class="error4" aria-live="polite"></span>
+                    </label>
+                </fieldset>
+                <fieldset class="storm-info">
+                    <legend>Storm Information</legend>
+                    <label class="block">Storm Date:
+                        <input type="date" name="storm-date">
+                    </label>
+                    <label class="block">Storm Type:
+                        <input type="text" list="storm-type" name="storm-types">
+                        <datalist id="storm-type">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+                    <label class="block">Storm Severity:
+                        <input type="range" id="stormRange" name="storm-severity" min="0" max="10" value="5" step="1" list="severity-range" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                        <span id="valueRange">5</span>
+
+                        <datalist id="severity-range">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    </label>
+                    <label class="block">Storm Region:
+                        <select name="storm-region" id="stormRegion" onchange="selectOption()">
+                            <option value="Select Region" selected disabled>Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <div>User-in-danger Level:</div>
+                    <label class="radio-sel">
+                        <input type="radio" name="danger-level" value="Yes"> Yes
+                    </label>
+                    <label class="radio-sel">
+                        <input type="radio" name="danger-level" value="Maybe"> Maybe
+                    </label>
+                    <label class="radio-sel">
+                        <input type="radio" name="danger-level" value="No"> No
+                    </label>
+                </fieldset>
+                <fieldset class="additional-info">
+                    <legend>Additional Information</legend>
+                    <label class="block">Additional Information or Comments:
+                        <textarea name="add-info" rows="10" cols="30" autocomplete="on" placeholder="Live in a Forest. Lightning could cause a fire."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Report a Storm" class="submit-btn">
+            </form>
+        </main>
+        <footer>
+            <p class="copyright">&#169; <span class="year"></span> | Reace Ian Roeloffze | South Africa | <a href="#" target="_blank">Terms of Use</a></p>
+            <p class="update">Last Updated: <span class="date"></span></p>
+        </footer>
+    </div>
+
+    <script src="js/assignment4.js"></script>
+    <script src="js/stormcenter.js"></script>
+</body>
+</html>

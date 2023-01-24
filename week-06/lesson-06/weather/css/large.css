@@ -52,8 +52,8 @@
     }
 
     main section.weather-summary {
-        width: 400px;
-        height: 270px;
+        width: 600px;
+        height: 280px;
         top: 30%;
         left: 9%;
         font-size: 2rem;

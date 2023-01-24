@@ -130,7 +130,9 @@ nav > ul > li > a {
 .navigation > ul > li.preston-page > a,
 .gallery-navigation > ul > li.gallery-page > a,
 .storm-navigation > ul > li.storm-center > a,
-.home-navigation > ul > li.homepage > a {
+.home-navigation > ul > li.homepage > a,
+.fish-haven-navigation > ul > li.fish-haven-page > a,
+.soda-springs-navigation > ul > li.soda-springs-page > a {
     background-color: #faff81;
     color: #550C18;
 }

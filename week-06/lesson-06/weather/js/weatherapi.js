@@ -68,7 +68,7 @@ fetch (forecastURLPreston)
 
 			let span = document.createElement('span');
 			let dateAndMonth = {month: 'numeric', day: 'numeric', timeStyle: undefined};
-			let monthDateString = forecastDate.toLocaleTimeString('en-GB', dateAndMonth);
+			let monthDateString = forecastDate.toLocaleDateString('en-GB', dateAndMonth);
 			span.textContent = monthDateString;
 			currentForecast.appendChild(span);
 

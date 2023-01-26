@@ -67,7 +67,7 @@ fetch (forecastURL)
 			currentForecast.appendChild(h4);
 
 			let span = document.createElement('span');
-			let dateAndMonth = {month: 'numeric', day: 'numeric', timeStyle: undefined};
+			let dateAndMonth = {month: 'numeric', day: 'numeric'};
 			let monthDateString = forecastDate.toLocaleTimeString('en-GB', dateAndMonth);
 			span.textContent = monthDateString;
 			currentForecast.appendChild(span);

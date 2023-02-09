@@ -427,6 +427,30 @@ article > h2 {
     padding: 10px;
 }
 
+section.preston-events,
+section.fh-events,
+section.ss-events {
+    text-align: center;
+    background-color: #4D1804;
+    color: #faff81;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+section.preston-events > h3,
+section.fh-events > h3,
+section.ss-events > h3 {
+    margin: 20px;
+}
+section.preston-events > span,
+section.fh-events > span,
+section.ss-events > span {
+    display: block;
+    margin-bottom: 20px;
+}
+
 footer {
     padding: 5px;
     text-align: center;

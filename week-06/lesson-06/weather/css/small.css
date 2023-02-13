@@ -439,9 +439,9 @@ section.ss-events {
     padding-bottom: 20px;
 }
 
-section.preston-events > h3,
-section.fh-events > h3,
-section.ss-events > h3 {
+section.preston-events > h2,
+section.fh-events > h2,
+section.ss-events > h2 {
     margin: 20px;
 }
 section.preston-events > span,

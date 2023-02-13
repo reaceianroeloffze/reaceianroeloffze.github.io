@@ -4,10 +4,10 @@ const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 // Retrieve the JSON File Containing the Town Data for Soda Springs
 const sodaSpringsEvents = document.querySelector('.ss-events');
 
-// Create headings for the events section.
-let ssH3 = document.createElement('h3');
-ssH3.textContent = 'Upcoming Events';
-sodaSpringsEvents.appendChild(ssH3);
+// // Create headings for the events section.
+// let ssH3 = document.createElement('h3');
+// ssH3.textContent = 'Upcoming Events';
+// sodaSpringsEvents.appendChild(ssH3);
 
 // Use Fetch API to Convert JSON into JavaScript & retrieve relevant Info.
 fetch(requestURL)

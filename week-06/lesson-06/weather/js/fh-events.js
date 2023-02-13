@@ -4,10 +4,10 @@ const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 // Retrieve the JSON File Containing the Town Data for Fish Haven.
 const fishHavenEvents = document.querySelector('.fh-events');
 
-// Create headings for the events section.
-let fhH3 = document.createElement('h3');
-fhH3.textContent = 'Upcoming Events';
-fishHavenEvents.appendChild(fhH3);
+// // Create headings for the events section.
+// let fhH3 = document.createElement('h3');
+// fhH3.textContent = 'Upcoming Events';
+// fishHavenEvents.appendChild(fhH3);
 
 // Use Fetch API to Convert JSON into JavaScript & retrieve relevant Info.
 fetch(requestURL)

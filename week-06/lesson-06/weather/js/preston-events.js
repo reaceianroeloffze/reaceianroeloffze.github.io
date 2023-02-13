@@ -4,10 +4,10 @@ const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 // Retrieve the HTML element responsible for storing the towns' event data.
 const prestonEvents = document.querySelector('.preston-events');
 
-// Create headings for the events section.
-let prestonH3 = document.createElement('h3');
-prestonH3.textContent = 'Upcoming Events';
-prestonEvents.appendChild(prestonH3);
+// // Create headings for the events section.
+// let prestonH3 = document.createElement('h3');
+// prestonH3.textContent = 'Upcoming Events';
+// prestonEvents.appendChild(prestonH3);
                           
 // Use Fetch API to Convert JSON into JavaScript & retrieve relevant Info.
 fetch(requestURL)

@@ -46,10 +46,10 @@ header {
     padding: 5px 0 0 0;
     background-color: #faff81;
     color: #550C18;
-    overflow: auto;
+    /* overflow: auto;
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 1; */
     /* border-bottom: 3px solid #faff81; */
 }
 

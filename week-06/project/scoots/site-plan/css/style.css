@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+body, .content {
+    background-color: azure;
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    color: indigo;
+    font-family: 'Phudu', cursive;
+    text-align: center;
+    padding: 10px;
+}
+
+.purpose__desc,
+.list__item,
+.target-audience__desc,
+.persons__persona-desc {
+    text-align: left;
+}
+
+.nav, .site-footer {
+    background-color: indigo;
+    border-radius: 10px;
+}
+
+.nav__links-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.nav__item {
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav__link {
+    display: block;
+    text-align: center;
+    padding: .75rem;
+    color: azure;
+}
+
+.nav__link:hover {
+    background-color: deepskyblue;
+    color: navy;
+    border-radius: 10px;
+}
+
+.site-footer {
+    padding-bottom: 5px;
+}
+
+.site-footer__copyright,
+.site-footer__last-updated {
+    color: azure;
+    padding-top: 20px;
+    line-height: 0;
+}
+
+table, .colors {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1 1 auto; */
+    justify-content: space-around;
+    /* width: 100%;
+    min-width: 250px;
+    margin: auto;
+    text-align: center; */
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td{
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #0D360E;
+}
+
+.secondary {
+    background-color: #ECECEA;
+}
+
+.accent1 {
+    background-color: #DDF0FF;
+}
+
+.accent2{
+    background-color: #172A3A;
+}
+
+.accent3{
+    background-color: #643A71;
+}
+
+.primary, .accent2, .accent3 {
+    color: azure;
+}
+
+.heading-font {
+    font-family: 'Poppins', sans-serif;
+}
+
+.paragraph-font, .sample-paragraph {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sample-paragraph {
+    background-color: #0D360E;
+    color: #ECECEA;
+    padding: 10px;
+}

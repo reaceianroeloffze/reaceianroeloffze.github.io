@@ -2,7 +2,7 @@ const options1 = {
     year: 'numeric'
 };
 
-document.querySelector('.copyright__year').textContent = new Date().toLocaleDateString('en-gb', options1);
+document.querySelector('.copyright__date').textContent = new Date().toLocaleDateString('en-gb', options1);
 
 const options2 = {
     dateStyle: 'short'

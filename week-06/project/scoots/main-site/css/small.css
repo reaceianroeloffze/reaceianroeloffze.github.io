@@ -1,1 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #ECECEA;
+}
+
+.content {
+    color: #172A3A;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #643A71;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.scoots-header {
+    position: sticky;
+    top: 0;
+}
+
+.site-navigation,
+.site-name,
+.site-navigation__links,
+.sm-links-list {
+    display: flex;
+}
+
+.site-navigation.expand {
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.logo-box {
+    width: 10%;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.logo-box:active {
+    background-color: #172A3A;
+    color: #DDF0FF;
+}
+
+.logo-box.expand {
+    display: none;
+}
+
+.site-name {
+    align-items: center;
+}
+
+.logo-box__logo {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.menu-button {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: #172A3A;
+}
+
+.menu-button__collapse {
+    display: none;
+}
+
+.menu-button.expand > .menu-button__expand {
+    display: none;
+}
+
+.menu-button.expand > .menu-button__collapse {
+    display: block;
+    text-align: right;
+}
+
+.site-navigation__links, .sm-links-list {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.7rem;
+    display: none;
+}
+
+.site-navigation__links.expand,
+.sm-links-list.expand {
+    display: block;
+}
+
+.sm-links-list.expand {
+    border-top: 2px solid #172A3A;
+    padding-top: 10px;
+}
+
+.links__list-item, .sm-links-list__sm-item {
+    padding-bottom: 0;
+}
+
+
+.list-item__link:active {
+    background-color: #172A3A;
+    color: #DDF0FF;
+}
+
+.list-item__link {
+    display: block;
+}
+
+.list-item__link, .site-name {
+    color: #172A3A;
+    padding: 5px 0;
+}
+
+.sm-links-list__sm-item {
+    display: inline;
+}
+
+.scoots-footer {
+    text-align: center;
+}

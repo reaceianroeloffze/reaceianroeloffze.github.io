@@ -1,0 +1,35 @@
+@media screen and (min-width: 1300px) {
+
+    .site-navigation {
+        justify-content: space-evenly;
+        padding: 10px 0;
+    }
+
+    .logo-box {
+        flex: 0;
+    }
+
+    .logo-box__logo {
+        width: 90px;
+    }
+    
+    .site-navigation__links, .site-name {
+        font-size: 1.5rem;
+    }
+
+    .links__list-item, .sm-links-list__sm-item {
+        margin: 0 10px;
+    }
+
+    .list-item__link:hover, .site-name:active {
+        background-color: #172A3A;
+        color: #DDF0FF;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .sm-item__link > img {
+        width: 50px;
+    }
+
+}

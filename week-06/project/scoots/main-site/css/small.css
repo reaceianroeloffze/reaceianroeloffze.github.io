@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #ECECEA;
+    background-color: #DDF0FF;
 }
 
 .content {
@@ -26,9 +26,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 .scoots-header {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .site-navigation,
@@ -36,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 .site-navigation__links,
 .sm-links-list {
     display: flex;
+}
+
+.site-navigation {
+    background-color: #DDF0FF;
 }
 
 .site-navigation.expand {
@@ -130,6 +139,31 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
 }
 
+.hero-box__hero-img {
+    width: 100%;
+}
+
+.action-call {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-content h2,
+.weather-forecast,
 .scoots-footer {
+    text-align: center;
+}
+
+.rentals-summary, .contact-info {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #0D360E;
+    color: #ECECEA;
+}
+
+.weather-forecast__days {
+    background-color: #172A3A;
+    color: #DDF0FF;
     text-align: center;
 }

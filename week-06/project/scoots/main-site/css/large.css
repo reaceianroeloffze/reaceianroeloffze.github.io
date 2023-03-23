@@ -1,5 +1,13 @@
 @media screen and (min-width: 1300px) {
 
+    p {
+        font-size: 1.5rem;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
     .site-navigation {
         justify-content: space-evenly;
         padding: 10px 0;
@@ -30,6 +38,58 @@
 
     .sm-item__link > img {
         width: 50px;
+    }
+
+    .page-title {
+        font-size: 4rem;
+    }
+
+    .action-call {
+        font-size: 1.5rem;
+        padding: 15px;
+        margin-left: 300px;
+    }
+
+    .site-intro {
+        top: 40%;
+    }
+
+    .slogan {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        width: 60%;
+        margin: 0 auto;
+        /* text-align: center; */
+        padding: 20px;
+    }
+
+    .contact-info, .rentals-summary {
+        position: absolute;
+        width: 18%;
+        /* top: 500px; */
+        font-size: 1.5rem;
+    }
+
+    .rentals-summary {
+        left: 20px;
+        top: 1100px;
+    }
+
+    .contact-info {
+        right: 20px;
+        top: 1400px;
+    }
+
+    .site-desc__img-float-left,
+    .site-desc__img-float-right {
+        width: 30%;
+        padding: 20px;
+    }
+
+    .days__day img {
+        width: 75%;
     }
 
 }

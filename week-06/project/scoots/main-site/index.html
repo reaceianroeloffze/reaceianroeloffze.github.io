@@ -35,13 +35,68 @@
             </nav>
         </header>
         <div class="hero-box">
-            <h1 class="page-title"></h1>
-            <img src="" alt="" class="hero-box__hero-img">
-            <p class="slogan"></p>
+            <picture>
+                <source media="(max-width: 560px)" srcset="images/placeholder-400.jpg" data-srcset="images/homepage/home-hero-400.jpg">
+                <source media="(max-width: 1300px)" srcset="images/placeholder-700.jpg" data-srcset="images/homepage/home-hero-700.jpg">
+                <img src="images/placeholder-1000.jpg" alt="Cozumel Island Port" class="hero-box__hero-img" data-src="images/homepage/home-hero-1000.jpg" loading="lazy">
+            </picture>
+            <div class="site-intro">
+                <h1 class="page-title">Get the Most of Cozumel Island!</h1>
+                <p class="slogan">
+                    Never miss out on anything with a reservation and a ride!
+                </p>
+                <a href="reservations.html"><button class="action-call">Make a Reservation!</button></a>
+            </div>
         </div>
-        <main class="main-content"></main>
-        <aside class="rentals-summary"></aside>
-        <aside class="contact-info"></aside>
+        <main class="main-content">
+            <section class="site-desc">
+                <h2 class="intro-heading">Welcome to Scoots!</h2>
+                <picture class="">
+                    <source media="(max-width: 560px)" srcset="images/placeholder-400.jpg" data-srcset="images/homepage/float-1-small.jpg">
+                    <source media="(max-width: 1300px)" srcset="images/placeholder-400.jpg" data-srcset="images/homepage/float-1-medium.jpg">
+                    <img src="images/placeholder-400.jpg" alt="Cozumel Coastline" data-src="images/homepage/float-1-large.jpg" class="site-desc__img-float-left" loading="lazy">
+                </picture>
+                <p class="desc-para">
+                    What was once a secluded island hideaway, has now become one of the most recognized tropical locales in Mexico’s majestic Caribbean region. This is Isla Cozumel. Boasting white sand beaches, coral reefs, modern amenities and an enormous swath of wild areas, it is an island paradise in every sense of the term. With countless activities both below and above the waves, your Cozumel visit is sure to be one you brag about for years to come.
+                </p>
+                <p>Source: <a href="https://www.islandlifemexico.com/best-of-cozumel/">Island Life Mexico</a></p>
+                <picture class="">
+                    <source media="(max-width: 560px)" srcset="images/placeholder-400.jpg" data-srcset="images/homepage/float-2-small.jpg">
+                    <source media="(max-width: 1300px)" srcset="images/placeholder-400.jpg" data-srcset="images/homepage/float-2-medium.jpg">
+                    <img src="images/placeholder-400.jpg" alt="Cozumel Coastline" data-src="images/homepage/float-2-large.jpg" class="site-desc__img-float-right" loading="lazy">
+                </picture>
+                <p class="desc-para">
+                    With so much to see and do on Cozumel Island, naturally you want to get around to doing and seeing as much as possible, which is why we at Scoots ensure that all those who rent from us have the best possible experience. Our vehicles are always kept and maintained in mint condition and always adhere to all current and updated safety regulations. Our quality vehicles are only inspected by the best of the best and we settle for no less. Rest assured that when you rent from us, you are renting from the best. 
+                </p>
+            </section>
+            <aside class="rentals-summary">
+                <h3 class="rentals-heading">Summary of Rentals</h3>
+                <h4 class="list-heading">Honda Motor Scootors</h4>
+                <ul class="honda-rentals">
+                    <li>Honda Metropolitan (49cc) - 1 person</li>
+                    <li>Honda Dio (110cc) - 2 people</li>
+                    <li>Honda PCX150 (149cc) 2 people</li>
+                </ul>
+                <h4 class="list-heading">ATV side-by-side</h4>
+                <ul class="atv-rentals">
+                    <li>Honda Pioneer 1000</li>
+                </ul>
+                <h4 class="list-heading">Jeep Rentals</h4>
+                <ul class="jeep-rentals">
+                    <li>4-door Jeep Wrangler - Manual with A/C - Max people = 5</li>
+                    <li>2-door Jeep Wrangler - open air - manual max people = 4</li>
+                </ul>
+            </aside>
+            <aside class="contact-info">
+                <h3 class="contact-heading">Contact Info</h3>
+                <p class="tel-num">Tel: (xxx)-xxx-xxxx</p>
+                <p class="email">scootssupport@gmail.com</p>
+            </aside>
+            <section class="weather-forecast">
+                <h2>5-Day Weather Forecast for Cozumel</h2>
+                <div class="weather-forecast__days"></div>
+            </section>
+        </main>
         <footer class="scoots-footer">
             <p class="copyright">© <span class="copyright__date"></span> Reace Ian Roeloffze | <a class="footer-link" href="https://www.byupathway.org/applynow?gclid=CjwKCAiAu5agBhBzEiwAdiR5tDWuOfyixHAzaEc70XbtJJjMlM_zfbH-iAW1zeVhdp_cZmrq_3jcmhoCBzkQAvD_BwE">BYU-Idaho Online Learning</a> | <a class="footer-link" href="resources.html">Resources</a></p>
             <p class="last-updated">Last Updated: <span class="last-updated__date"></span></p>
@@ -50,5 +105,7 @@
 
     <script src="js/date.js"></script>
     <script src="js/menu-btn.js"></script>
+    <script src="js/lazy-loading.js"></script>
+    <script src="js/weather-api.js"></script>
 </body>
 </html>

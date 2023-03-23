@@ -41,4 +41,60 @@
         width: 80px;
     }
 
+    .site-intro {
+        position: absolute;
+        top: 14%;
+        width: 50%;
+        background-color: #172A3A;
+        opacity: .9;
+        color: #DDF0FF;
+        padding: 0 0 15px 15px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .slogan {
+        font-size: 1.5rem;
+    }
+
+    .action-call {
+        margin-left: 20%;
+        font-size: 1.2rem; 
+    }
+
+    .site-desc__img-float-left {
+        float: left;
+    }
+
+    .site-desc__img-float-right {
+        float: right;
+    }
+
+    .site-desc__img-float-left,
+    .site-desc__img-float-right {
+        width: 30%;
+    }
+
+    .weather-forecast__days {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .site-intro {
+        top: 40%;
+    }
+
+    .action-call {
+        margin-left: 30%;   
+    }
+
 }

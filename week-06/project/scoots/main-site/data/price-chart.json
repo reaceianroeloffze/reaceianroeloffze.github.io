@@ -1,0 +1,106 @@
+{
+    "price-chart": [
+        {
+            "vehicle": "Honda Metro Scooter",
+            "image": "images/rentals-page/honda-metro-scooter.jpg",
+            "seats": 1,
+            "reservation": [
+                
+                     "$20",
+                     "$30"
+                 
+            ],
+            "walkIn": [
+                
+                     "$25",
+                     "$35"
+                
+            ]
+        },
+        {
+            "vehicle": "Honda Dio Scooter",
+            "image": "images/rentals-page/honda-dio-scooter.jpg",
+            "seats": 2,
+            "reservation": [
+                
+                     "$30",
+                     "$40"
+                
+            ],
+            "walkIn": [
+                
+                     "$35",
+                     "$45"
+                
+            ]
+        },
+        {
+            "vehicle": "Honda PCX150 Scooter",
+            "image": "images/rentals-page/honda-pcx150-scooter.jpg",
+            "seats": 2,
+            "reservation": [
+                
+                     "$40",
+                     "$50"
+                
+            ],
+            "walkIn": [
+                
+                     "$45",
+                     "$55"
+                
+            ]
+        },
+        {
+            "vehicle": "Honda Pioneer ATV",
+            "image": "images/rentals-page/honda-pioneer-atv.jpg",
+            "seats": 4,
+            "reservation": [
+                
+                     "$50",
+                     "$70"
+                
+            ],
+            "walkIn": [
+                
+                     "$60",
+                     "$80"
+                
+            ]
+        },
+        {
+            "vehicle": "2 door Jeep Wrangler",
+            "image": "images/rentals-page/2-door-jeep-wrangler.jpg",
+            "seats": 4,
+            "reservation": [
+                
+                     "$60",
+                     "$85"
+                
+            ],
+            "walkIn": [
+                
+                     "$70",
+                     "$90"
+                
+            ]
+        },
+        {
+            "vehicle": "4 door Jeep Wrangler with a/c",
+            "image": "images/rentals-page/4-door-jeep-wrangler.jpg",
+            "seats": 5,
+            "reservation": [
+                
+                     "$70",
+                     "$100"
+                
+            ],
+            "walkIn": [
+                
+                     "$85",
+                     "$125"
+                
+            ]
+        }
+    ]
+}

@@ -30,6 +30,10 @@ img {
     width: 100%;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 .scoots-header {
     position: sticky;
     top: 0;
@@ -77,6 +81,12 @@ img {
     border-radius: 100px;
 }
 
+.site-intro {
+    background-color: #172A3A;
+    color: #DDF0FF;
+    padding: 10px;
+}
+
 .menu-button {
     font-size: 2rem;
     border: none;
@@ -120,7 +130,6 @@ img {
     padding-bottom: 0;
 }
 
-
 .list-item__link:active {
     background-color: #172A3A;
     color: #DDF0FF;
@@ -139,14 +148,24 @@ img {
     display: inline;
 }
 
+.sm-item__link > img {
+    width: 50px;
+}
+
 .hero-box__hero-img {
     width: 100%;
 }
 
 .action-call {
+    margin-left: 25%;
     padding: 10px;
     border: none;
     border-radius: 10px;
+}
+
+.rentals-content {
+    background-color: #172A3A;
+    color: #DDF0FF;
 }
 
 .main-content h2,
@@ -155,15 +174,96 @@ img {
     text-align: center;
 }
 
+.main-content h2 {
+    font-size: 2.1rem;
+}
+
+.main-content h3 {
+    font-size: 1.8rem;
+}
+
+.main-content h4 {
+    font-size: 1.5rem;
+}
+
+.desc-para {
+    padding: 0 15px 0 15px;
+}
+
 .rentals-summary, .contact-info {
     padding: 15px;
-    border-radius: 10px;
     background-color: #0D360E;
     color: #ECECEA;
+    font-size: 1.2rem;
+}
+
+.weather-information__summary {
+    background-color: #643A71;
+    color: #ECECEA;
+    padding: 20px;
+}
+
+.wi-para {
+    margin: 0;
 }
 
 .weather-forecast__days {
     background-color: #172A3A;
     color: #DDF0FF;
     text-align: center;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.day__weekday,
+.day__month-day,
+.day__temp {
+    font-size: 1.5rem;
+}
+
+.day__weather-con {
+    width: 150px;
+}
+
+.day__temp,
+.day__month-day {
+    display: block;
+}
+
+/* Rentals Page Styles */
+
+.price-summary__table {
+    margin: 0 auto;
+    border: 2px solid #DDF0FF;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__table-heading th, 
+.table__table-data-cell {
+    border: 2px solid #DDF0FF;
+    padding: 10px;
+    text-align: center;
+}
+
+.table__td-first {
+    text-align: start;
+}
+
+.price-chart {
+    text-align: center;
+}
+
+.price-chart__chart-grid {
+    padding: 0 20px 0 20px;
+}
+
+.product-info__h3 {
+    font-size: 1.8rem;
+}
+
+.product-info__h3,
+.product-info__h4, 
+.product-info p {
+    margin: 10px;
 }

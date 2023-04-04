@@ -13,7 +13,7 @@
     <title>Rentals | Scoots</title>
 </head>
 <body>
-    <div class="content">
+    <div class="content rentals-content">
         <header class="scoots-header">
             <nav class="site-navigation">
                 <div class="logo-box">
@@ -39,9 +39,64 @@
             <img src="" alt="" class="hero-box__hero-img">
             <p class="slogan"></p>
         </div>
-        <main class="main-content"></main>
-        <aside class="rentals-summary"></aside>
-        <aside class="contact-info"></aside>
+        <main class="main-content">
+            <section class="price-summary">
+                <h2 class="price-summary__heading">Rental Prices for 1 Full Day</h2>
+                <table class="price-summary__table">
+                    <thead class="table__table-heading">
+                        <th colspan="100%">
+                            Full Day Rental Vehicle Prices
+                        </th>
+                    </thead>
+                    <tbody class="table__table-body">
+                        <tr class="table__table-row">
+                            <td class="table__table-data-cell table__td-first"></td>
+                            <td class="table__table-data-cell">Reservation</td>
+                            <td class="table__table-data-cell table__td-last">Walk-In</td>
+                        </tr>
+                        <tr class="table__table-row table__row-top">
+                            <td class="table__table-data-cell table__td-first">Rental Vehicle</td>
+                            <td class="table__table-data-cell">Price</td>
+                            <td class="table__table-data-cell table__td-last">Price</td>
+                        </tr>
+                        <tr class="table__table-row">
+                            <td class="table__table-data-cell table__td-first">Honda Metropolitan Scooter</td>
+                            <td class="table__table-data-cell">$30</td>
+                            <td class="table__table-data-cell table__td-last">$35</td>
+                        </tr>
+                        <tr class="table__table-row">
+                            <td class="table__table-data-cell table__td-first">Honda Dio Scooter</td>
+                            <td class="table__table-data-cell">$40</td>
+                            <td class="table__table-data-cell table__td-last">$45</td>
+                        </tr>
+                        <tr class="table__table-row">
+                            <td class="table__table-data-cell table__td-first">Honda PCX150 Scooter</td>
+                            <td class="table__table-data-cell">$50</td>
+                            <td class="table__table-data-cell table__td-last">$55</td>
+                        </tr>
+                        <tr class="table__table-row">
+                            <td class="table__table-data-cell table__td-first">Honda Pioneer ATV</td>
+                            <td class="table__table-data-cell">$70</td>
+                            <td class="table__table-data-cell table__td-last">$80</td>
+                        </tr>
+                        <tr class="table__table-row">
+                            <td class="table__table-data-cell table__td-first">2 Door Jeep Wrangler</td>
+                            <td class="table__table-data-cell">$85</td>
+                            <td class="table__table-data-cell table__td-last">$90</td>
+                        </tr>
+                        <tr class="table__table-row table__row-bottom">
+                            <td class="table__table-data-cell table__td-first">4 Door Jeep Wrangler With a/c</td>
+                            <td class="table__table-data-cell">$100</td>
+                            <td class="table__table-data-cell table__td-last">$125</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="price-chart">
+                <h2 class="price-chart__h2">Vehicles to Rent</h2>
+                <div class="price-chart__chart-grid"></div> <!-- filled with js -->
+            </section>
+        </main>
         <footer class="scoots-footer">
             <p class="copyright">© <span class="copyright__date"></span> Reace Ian Roeloffze | <a class="footer-link" href="https://www.byupathway.org/applynow?gclid=CjwKCAiAu5agBhBzEiwAdiR5tDWuOfyixHAzaEc70XbtJJjMlM_zfbH-iAW1zeVhdp_cZmrq_3jcmhoCBzkQAvD_BwE">BYU-Idaho Online Learning</a> | <a class="footer-link" href="resources.html">Resources</a></p>
             <p class="last-updated">Last Updated: <span class="last-updated__date"></span></p>
@@ -51,5 +106,6 @@
     <script src="js/date.js"></script>
     <script src="js/menu-btn.js"></script>
     <script src="js/lazy-loading.js"></script>
+    <script src="js/price-chart.js"></script>
 </body>
 </html>

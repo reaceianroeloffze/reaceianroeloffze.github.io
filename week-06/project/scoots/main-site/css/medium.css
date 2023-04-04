@@ -45,7 +45,6 @@
         position: absolute;
         top: 14%;
         width: 50%;
-        background-color: #172A3A;
         opacity: .9;
         color: #DDF0FF;
         padding: 0 0 15px 15px;
@@ -65,17 +64,37 @@
         font-size: 1.2rem; 
     }
 
+    .main-content {
+        padding: 0 20px 0 20px;
+    }
+
+    .main-content p {
+        padding: 0;
+    }
+
+    .site-desc {
+        min-height: 550px;
+    }
+
     .site-desc__img-float-left {
         float: left;
+        padding: 0 20px 10px 0;
     }
 
     .site-desc__img-float-right {
         float: right;
+        padding-left: 20px;
     }
 
     .site-desc__img-float-left,
     .site-desc__img-float-right {
-        width: 30%;
+        width: 40%;
+    }
+
+    .weather-information__summary {
+        border-radius: 10px;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .weather-forecast__days {
@@ -85,9 +104,30 @@
         border-radius: 10px;
     }
 
+    .day__weekday,
+    .day__month-day,
+    .day__temp {
+        font-size: 1.2rem;
+    }
+
+    .day__weather-con {
+        width: 120px;
+    }
+
+    .price-chart__chart-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .product-info {
+        display: grid;
+        grid-template-rows: 1fr
+    }
+
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .site-intro {
         top: 40%;
@@ -95,6 +135,23 @@
 
     .action-call {
         margin-left: 30%;   
+    }
+
+    .site-desc img {
+        width: 30%;
+    }
+
+    .site-desc {
+        min-height: 450px;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .site-desc {
+        min-height: 480px;
     }
 
 }

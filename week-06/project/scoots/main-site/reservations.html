@@ -39,9 +39,69 @@
             <img src="" alt="" class="hero-box__hero-img">
             <p class="slogan"></p>
         </div>
-        <main class="main-content"></main>
-        <aside class="rentals-summary"></aside>
-        <aside class="contact-info"></aside>
+        <main class="main-content resv-main">
+            <form action="form-submit.html" class="resv-form">
+                <fieldset class="resv-form__personal-info form-fieldset">
+                    <legend class="form-legend">Personal Information</legend>
+                    <label class="personal-info__full-name form-label">Full Name:*
+                        <input type="text" name="full-name" id="full-name" required placeholder="First, Middle, Last" pattern="[ A-Za-z]*" aria-live="polite" class="form-input">
+                    </label>
+                    <label class="personal-information__email form-label">Email:*
+                        <input type="email" name="email" id="email" placeholder="email@example.com" pattern="[@{1}.{1,2}]" aria-live="polite" required class="form-input">
+                    </label>
+                    <label class="personal-info__phone-num form-label">Phone Number (Cell):* 
+                        <input type="tel" class="form-input" name="phone-number" id="phone-number" required="required" minlength="10" aria-live="polite">
+                    </label>
+                    <label class="personal-info__country form-label">Home Country:
+                        <input type="text" class="form-input" name="country" id="country" placeholder="Example: United Sates" aria-live="polite">
+                    </label>
+                </fieldset>
+
+                <fieldset class="resv-form__resv-info form-fieldset">
+                    <legend class="form-legend">Reservation Information</legend>
+                    <label class="resv-info form-label">Date:*
+                        <input type="date" name="date" id="date" class="resv-info__date form-input" required>
+                    </label>
+                    <label class="resv-info__resv-period form-label">Duration of Rental:*
+                        <input type="text" class="resv-period form-input" name="resv-period" id="resv-period" required="required" list="time-period">
+
+                        <datalist id="time-period">
+                            <option value="Half Day (3h)"></option>
+                            <option value="Full Day"></option>         
+                        </datalist>
+                    </label>
+                    <div class="form-div">Rental Type</div>
+                        <label class="resv-info__vehicle-select form-label">
+                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-metro-scooter"> Honda Metro Scooter (1 person)
+                        </label>
+                        <label class="resv-info__vehicle-select form-label">
+                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-dio-scooter"> Honda Dio Scooter (2 people)
+                        </label>
+                        <label class="resv-info__vehicle-select form-label">
+                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-pcx150-scooter"> Honda PCX150 Scooter (2 people)
+                        </label>
+                        <label class="resv-info__vehicle-select form-label">
+                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-pioneer-atv"> Honda Pioneer ATV (4 people)
+                        </label>
+                        <label class="resv-info__vehicle-select form-label">
+                            <input type="radio" class="vehicle-select" name="rental-select" value="2-door-jeep-wrangler"> 2 Door Jeep Wrangler (4 people)
+                        </label>
+                        <label class="resv-info__vehicle-select form-label">
+                            <input type="radio" class="vehicle-select" name="rental-select" value="4-door-jeep-wrangler-with-ac"> 4 Door Jeep Wrangler with a/c (5 people)
+                        </label>
+                        <label class="resv-info__max-people form-label">Number of People:*
+                            <input type="number" class="max-people-input form-input" name="max-people" id="max-people">
+                        </label>
+                </fieldset>
+                <fieldset class="resv-form__additonal-info form-fieldset">
+                    <legend class="form-legend">Additonal Information</legend>
+                    <label class="additional-info__info-label form-label">Special Accomodations/Comments:
+                        <textarea name="additional-info" rows="10" class="info-label__info-box">
+                        </textarea>
+                    </label>
+                </fieldset>
+            </form>
+        </main>
         <footer class="scoots-footer">
             <p class="copyright">© <span class="copyright__date"></span> Reace Ian Roeloffze | <a class="footer-link" href="https://www.byupathway.org/applynow?gclid=CjwKCAiAu5agBhBzEiwAdiR5tDWuOfyixHAzaEc70XbtJJjMlM_zfbH-iAW1zeVhdp_cZmrq_3jcmhoCBzkQAvD_BwE">BYU-Idaho Online Learning</a> | <a class="footer-link" href="resources.html">Resources</a></p>
             <p class="last-updated">Last Updated: <span class="last-updated__date"></span></p>

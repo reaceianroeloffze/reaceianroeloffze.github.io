@@ -65,15 +65,15 @@
     }
 
     .main-content h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .main-content h3 {
-        font-size: 2.1rem;
+        font-size: 2.5rem;
     }
 
     .main-content h4 {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     }
 
     .contact-info, .rentals-summary {
@@ -100,6 +100,28 @@
 
     .weather-information__summary {
         width: 40%;
+    }
+
+    .price-summary__table {
+        width: 60%;
+    }
+
+    .table__table-heading {
+        font-size: 2rem;
+    }
+
+    .table__table-row {
+        font-size: 1.5rem;
+    }
+
+    .rentals-hero-box {
+        height: 85vh;
+    }
+
+    /* ---------------- Reservations Page Styles ----------------------- */
+
+    .resv-form {
+        width: 25vw;
     }
 
 }

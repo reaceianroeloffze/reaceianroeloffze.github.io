@@ -30,6 +30,11 @@ h1, h2, h3, h4, h5, h6, .table__table-heading, legend {
 
 .page-title {
     font-size: 2.5rem;
+    color: #DDF0FF;
+}
+
+.slogan {
+    color: #DDF0FF;
 }
 
 img {
@@ -162,8 +167,9 @@ p {
     width: 100%;
 }
 
-.action-call {
-    margin-left: 25%;
+.action-call__btn {
+    display: block;
+    margin: 0 auto;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -317,11 +323,48 @@ p {
 
 /* Reservations Styles */
 
+.resv-main {
+    background-image: url(../images/reservations-page/ship-and-scooter.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.resv-hero-box {
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.resv-hero-box .page-title {
+    margin: 0;
+}
+
+.resv-slogan {
+    margin-top: 10px;
+}
+
+.resv-agreements {
+    color: #DDF0FF;
+    background-color: #172A3A;
+    opacity: 0.7;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
 .resv-form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 0 .5rem;
+    background-color: #DDF0FF;
+    border: 3px solid #172A3A;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100%;
 }
 
 .form-fieldset {
@@ -347,17 +390,37 @@ p {
     padding-top: 1.5rem;
 }
 
-.info-label__info-box {
-    border-width: 2px;
+.info-label__info-box, .form-input, .form-fieldset, .cruise-line__cruise-line-select {
+    border-width: 3px;
+    border-color: #172A3A;
 }
 
-.form-input, .info-label__info-box {
+.form-agreement {
+    margin-bottom: 30px;
+}
+
+.agreement-input {
+    margin: 0 10px 5px 0;
+    width: 20px;
+    height: 20px;
+}
+
+.form-input, .info-label__info-box, .cruise-line__cruise-line-select {
     width: 100%;
     border-radius: 5px;
     border-style: solid;
     padding: 1rem .5rem;
     outline: none;
     color: #172A3A;
+}
+
+.cruise-line-select__cruise-line-option {
+    padding: 1rem .5rem;
+}
+
+.info-label__info-box {
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .form-legend,
@@ -370,4 +433,24 @@ p {
 .info-label__info-box {
     font-size: 1.2rem;
 }
+
+.form-btn {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px outset #172A3A;
+    background-color: #ECECEA;
+    color: #0D360E;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.form-btn:active {
+    background-color: #172A3A;
+    color: #DDF0FF;
+    border-style: inset;
+}
+
+.thank-you-para {
+    text-align: center;
 }

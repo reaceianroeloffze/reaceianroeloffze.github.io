@@ -34,12 +34,28 @@
                 </ul>
             </nav>
         </header>
-        <div class="hero-box">
-            <h1 class="page-title"></h1>
-            <img src="" alt="" class="hero-box__hero-img">
-            <p class="slogan"></p>
-        </div>
         <main class="main-content resv-main">
+            <div class="hero-box resv-hero-box">
+                <h1 class="page-title">Reservations</h1>
+                <p class="slogan resv-slogan">Be ahead by booking your rentals in advance!</p>
+            </div>
+            <div class="resv-agreements">
+                <p class="resv-agreements__desc-para">
+                    Before making a reservation, please be aware of the followuing information and services:
+                </p>
+                <ul class="resv-agreements__agreements-list">
+                    <li class="agreements-list__agreement-item">A $50 security deposit is required to confirm reservations.</li>
+                    <li class="agreements-list__agreement-item">A valid drivers license is required in hand at time of rental.</li>
+                    <li class="agreements-list__agreement-item">No one under 12 years of age is allowed to ride on the scooters.</li>
+                    <li class="agreements-list__agreement-item">Fuel charge not included.</li>
+                    <li class="agreements-list__agreement-item">Unlimited mileage.</li>
+                    <li class="agreements-list__agreement-item">Liability insurance is free of charge.</li>
+                    <li class="agreements-list__agreement-item">Reservations rate requires 24 hour prior notification.</li>
+                    <li class="agreements-list__agreement-item">Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li class="agreements-list__agreement-item">Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                    <li class="agreements-list__agreement-item">Rentals may be returned to either location.</li>
+                </ul>
+            </div>
             <form action="form-submit.html" class="resv-form">
                 <fieldset class="resv-form__personal-info form-fieldset">
                     <legend class="form-legend">Personal Information</legend>
@@ -56,7 +72,6 @@
                         <input type="text" class="form-input" name="country" id="country" placeholder="Example: United Sates" aria-live="polite">
                     </label>
                 </fieldset>
-
                 <fieldset class="resv-form__resv-info form-fieldset">
                     <legend class="form-legend">Reservation Information</legend>
                     <label class="resv-info form-label">Date:*
@@ -71,38 +86,50 @@
                         </datalist>
                     </label>
                     <div class="form-div">Rental Type</div>
-                        <label class="resv-info__vehicle-select form-label">
-                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-metro-scooter"> Honda Metro Scooter (1 person)
-                        </label>
-                        <label class="resv-info__vehicle-select form-label">
-                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-dio-scooter"> Honda Dio Scooter (2 people)
-                        </label>
-                        <label class="resv-info__vehicle-select form-label">
-                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-pcx150-scooter"> Honda PCX150 Scooter (2 people)
-                        </label>
-                        <label class="resv-info__vehicle-select form-label">
-                            <input type="radio" class="vehicle-select" name="rental-select" value="honda-pioneer-atv"> Honda Pioneer ATV (4 people)
-                        </label>
-                        <label class="resv-info__vehicle-select form-label">
-                            <input type="radio" class="vehicle-select" name="rental-select" value="2-door-jeep-wrangler"> 2 Door Jeep Wrangler (4 people)
-                        </label>
-                        <label class="resv-info__vehicle-select form-label">
-                            <input type="radio" class="vehicle-select" name="rental-select" value="4-door-jeep-wrangler-with-ac"> 4 Door Jeep Wrangler with a/c (5 people)
-                        </label>
-                        <label class="resv-info__max-people form-label">Number of People:*
-                            <input type="number" class="max-people-input form-input" name="max-people" id="max-people">
-                        </label>
+                    <label class="resv-info__vehicle-select form-label">
+                        <input type="radio" class="vehicle-select" name="rental-select" value="honda-metro-scooter"> Honda Metro Scooter (1 person)
+                    </label>
+                    <label class="resv-info__vehicle-select form-label">
+                        <input type="radio" class="vehicle-select" name="rental-select" value="honda-dio-scooter"> Honda Dio Scooter (2 people)
+                    </label>
+                    <label class="resv-info__vehicle-select form-label">
+                        <input type="radio" class="vehicle-select" name="rental-select" value="honda-pcx150-scooter"> Honda PCX150 Scooter (2 people)
+                    </label>
+                    <label class="resv-info__vehicle-select form-label">
+                        <input type="radio" class="vehicle-select" name="rental-select" value="honda-pioneer-atv"> Honda Pioneer ATV (4 people)
+                    </label>
+                    <label class="resv-info__vehicle-select form-label">
+                        <input type="radio" class="vehicle-select" name="rental-select" value="2-door-jeep-wrangler"> 2 Door Jeep Wrangler (4 people)
+                    </label>
+                    <label class="resv-info__vehicle-select form-label">
+                        <input type="radio" class="vehicle-select" name="rental-select" value="4-door-jeep-wrangler-with-ac"> 4 Door Jeep Wrangler with a/c (5 people)
+                    </label>
+                    <label class="resv-info__max-people form-label">Number of People:*
+                        <input type="number" class="max-people-input form-input" name="max-people" id="max-people">
+                    </label>
+                    <label class="resv-info__cruise-line form-label">Cruise Line (if applicable)
+                        <select name="cruise-line" class="cruise-line__cruise-line-select">
+                            <option class="cruise-line-select__cruise-line-option" value="select-cruise-line" selected>Select Cruise Line</option>
+                            <option class="cruise-line-select__cruise-line-option" value="">Select Cruise Line</option>
+                            <option class="cruise-line-select__cruise-line-option" value="">Select Cruise Line</option>
+                            <option class="cruise-line-select__cruise-line-option" value="">Select Cruise Line</option>
+                            <option class="cruise-line-select__cruise-line-option" value="">Select Cruise Line</option>
+                        </select>
+                    </label>
                 </fieldset>
                 <fieldset class="resv-form__additonal-info form-fieldset">
                     <legend class="form-legend">Additonal Information</legend>
                     <label class="additional-info__info-label form-label">Special Accomodations/Comments:
-                        <textarea name="additional-info" rows="10" class="info-label__info-box">
-                        </textarea>
+                        <textarea name="additional-info" rows="10" class="info-label__info-box"></textarea>
                     </label>
                 </fieldset>
+                <label class="form-label form-agreement">
+                    <input type="checkbox" name="form-agreement" class="agreement-input">I agree to the above terms and conditions of both rentals and services.
+                </label>
+                <button class="form-submit form-btn">Make a Reservation</button>
             </form>
         </main>
-        <footer class="scoots-footer">
+        <footer class="scoots-footer resv-footer">
             <p class="copyright">© <span class="copyright__date"></span> Reace Ian Roeloffze | <a class="footer-link" href="https://www.byupathway.org/applynow?gclid=CjwKCAiAu5agBhBzEiwAdiR5tDWuOfyixHAzaEc70XbtJJjMlM_zfbH-iAW1zeVhdp_cZmrq_3jcmhoCBzkQAvD_BwE">BYU-Idaho Online Learning</a> | <a class="footer-link" href="resources.html">Resources</a></p>
             <p class="last-updated">Last Updated: <span class="last-updated__date"></span></p>
         </footer>

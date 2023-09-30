@@ -59,8 +59,7 @@
         font-size: 1.5rem;
     }
 
-    .action-call {
-        margin-left: 20%;
+    .action-call__btn {
         font-size: 1.2rem; 
     }
 
@@ -165,6 +164,24 @@
 
     .rentals-footer {
         margin-top: 20px;
+    }
+
+    .resv-main {
+        padding-bottom: 30px;
+    }
+
+    .resv-agreements {
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+
+    .resv-agreements__desc-para {
+        font-size: 1.5rem;
+    }
+
+    .form-btn {
+        font-size: 1.5rem;
+        width: 400px;
     }
 
 }

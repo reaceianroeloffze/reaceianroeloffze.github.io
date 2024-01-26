@@ -138,4 +138,7 @@
         width: 300px;
     }
 
+    .tours-content .tours__tours-name {
+        font-size: 2rem;
+    }
 }

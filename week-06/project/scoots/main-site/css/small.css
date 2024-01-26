@@ -28,6 +28,15 @@ h1, h2, h3, h4, h5, h6, .table__table-heading, legend {
     font-family: 'Poppins', sans-serif;
 }
 
+figure {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .page-title {
     font-size: 2.5rem;
     color: #DDF0FF;
@@ -313,6 +322,8 @@ p {
     margin: 10px;
 }
 
+/* Tours page styles */
+
 /* --------------------- Site Footer -------------------- */
 
 .scoots-footer {
@@ -452,5 +463,43 @@ p {
 }
 
 .thank-you-para {
+    text-align: center;
+}
+
+/* Tours page styles */
+
+.tours-title, .tours-slogan {
+    color: #172A3A;
+    text-align: center;
+}
+
+.tours-roster, .tours, .tours__tours-desc {
+    display: grid;
+}
+
+.tours {
+    grid-template-rows: .6fr 1fr;
+    row-gap: 20px;
+}
+
+.tours__tours-img {
+    grid-row: 2;
+    align-self: stretch;
+}
+
+.tours__tours-desc {
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.tours-content .tours__tours-name {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.tours-desc__desc-list {
+    font-size: 1.5rem;
+    margin: 0;
     text-align: center;
 }
